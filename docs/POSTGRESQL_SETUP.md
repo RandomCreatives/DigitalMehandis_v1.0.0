@@ -56,7 +56,7 @@ This runs both migrations:
 ```powershell
 .\venv\Scripts\python.exe -c "
 import asyncio
-from app.utils.seed_rates import seed_rates
+from app.modules.rates.seed import seed_rates
 from app.db.session import AsyncSessionLocal
 async def main():
     async with AsyncSessionLocal() as db:
@@ -83,7 +83,7 @@ asyncio.run(main())
 DATABASE_URL=sqlite+aiosqlite:///./ethioqs.db
 ```
 
-Then run: `.\venv\Scripts\python.exe create_tables.py`
+Then run: `alembic upgrade head` (the same migrations work on SQLite and PostgreSQL).
 
 ---
 

@@ -8,17 +8,20 @@
 - Repo: `RandomCreatives/DigitalMehandis_v1.0.0`
 
 ## Current plan
-`openspec/changes/standalone-restructure/` — step 1 (cleanup) done; step 2 (backend restructure) next.
+`openspec/changes/standalone-restructure/` — steps 1–2 done (cleanup, backend modules + single migration baseline). Next: step 3 Ethiopia layer (#16).
 
 ## Stack
 Next.js 14 + Tailwind + Fabric.js + PDF.js | FastAPI + SQLAlchemy 2 async + Alembic | PostgreSQL (prod) / SQLite (dev) | JWT auth | ezdxf for DXF.
 
+## Backend layout
+Each feature = `backend/app/modules/<name>/` with models.py / schemas.py / service files / router.py.
+See docs/ARCHITECTURE.md. Single Alembic baseline `0001`. Tests: `pytest` (SQLite or PostgreSQL via DATABASE_URL).
+
 ## Known debt
-- Models split by phase: `db/models.py`, `models_phase2.py`, `models_phase3.py`, `models_cost.py`
-- Some tables created by `backend/create_tables.py` instead of Alembic
-- Rate files duplicated in `frontend/public/attachments/` (UI fetches them statically)
-- Tests cover only auth and BBS
+- Duplicate routes (same path in two modules): rates CRUD in `boq` + `rates`, bbs sync-to-boq in `bbs` + `rates`
+- Rate files duplicated in `frontend/public/attachments/` (UI fetches them statically) — issue #18
+- Test coverage still thin on take-off → BOQ → pricing — issue #19
 
 ## Run locally
-- Backend: `cd backend && uvicorn app.main:app --reload --host 0.0.0.0 --port 8000`
+- Backend: `cd backend && alembic upgrade head && uvicorn app.main:app --reload --host 0.0.0.0 --port 8000`
 - Frontend: `cd frontend && npm run dev`

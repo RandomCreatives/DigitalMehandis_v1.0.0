@@ -6,11 +6,11 @@
 - [x] 1.5 Refresh `.kiro/session-context.md`
 
 ## 2. Backend restructure
-- [ ] 2.1 Define module layout convention in docs/ARCHITECTURE.md
-- [ ] 2.2 Move models from `db/models*.py` into their feature modules
-- [ ] 2.3 Split module `__init__.py` routers into router/service/schemas
-- [ ] 2.4 Single Alembic baseline; retire `create_tables.py`
-- [ ] 2.5 Verify on SQLite and PostgreSQL
+- [x] 2.1 Define module layout convention in docs/ARCHITECTURE.md
+- [x] 2.2 Move models from `db/models*.py` into their feature modules
+- [x] 2.3 Split module `__init__.py` into router.py + schemas.py + logic files (deeper router→service extraction continues per module)
+- [x] 2.4 Single Alembic baseline; retire `create_tables.py`
+- [x] 2.5 Verify on SQLite and PostgreSQL
 
 ## 3. Ethiopia layer
 - [ ] 3.1 ETB currency + number formatting
@@ -28,8 +28,9 @@
 - [ ] 5.2 Versioned importer from `data/rates/`; serve rates via API instead of static files
 
 ## 6. Tests
+- [x] 6.0 CI fixed; runs on SQLite + PostgreSQL + frontend type-check
 - [ ] 6.1 End-to-end: take-off → BOQ → pricing → export
-- [ ] 6.2 CI on PostgreSQL
+- [x] 6.2 CI on PostgreSQL
 
 ## 7. Frontend
 - [ ] 7.1 `src/features/*` layout mirroring backend modules

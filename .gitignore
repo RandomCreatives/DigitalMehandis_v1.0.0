@@ -48,3 +48,6 @@ Thumbs.db
 
 # Build artifacts
 *.tsbuildinfo
+
+# Local test databases
+backend/ci.db

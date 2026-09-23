@@ -1,0 +1,73 @@
+name: Tests
+
+on:
+  push:
+    branches: [main, develop, "arena/**"]
+  pull_request:
+    branches: [main]
+
+jobs:
+  backend-sqlite:
+    name: Backend tests (SQLite)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    env:
+      DATABASE_URL: sqlite+aiosqlite:///./ci.db
+      SECRET_KEY: test_secret_key_for_ci
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: pytest --tb=short -q
+
+  backend-postgres:
+    name: Backend tests (PostgreSQL)
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: ethioqs
+          POSTGRES_PASSWORD: ethioqs_secret
+          POSTGRES_DB: ethioqs
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U ethioqs"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    defaults:
+      run:
+        working-directory: backend
+    env:
+      DATABASE_URL: postgresql+asyncpg://ethioqs:ethioqs_secret@localhost:5432/ethioqs
+      SECRET_KEY: test_secret_key_for_ci
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Apply migrations to an empty database
+        run: alembic upgrade head && alembic check
+      - run: pytest --tb=short -q
+
+  frontend:
+    name: Frontend type-check
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npx tsc --noEmit

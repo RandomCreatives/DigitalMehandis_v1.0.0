@@ -4,8 +4,7 @@ from sqlalchemy import pool
 from sqlalchemy.ext.asyncio import async_engine_from_config
 from alembic import context
 from app.db.base import Base
-from app.db import models  # noqa: F401 — ensure Phase 1 models are registered
-from app.db import models_phase2  # noqa: F401 — ensure Phase 2 models are registered
+from app.db import registry  # noqa: F401 — registers every module's models
 from app.core.config import get_settings
 
 config = context.config
