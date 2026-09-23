@@ -1,4 +1,7 @@
 schema: spec-driven
+context: |
+  Digital Mehandis: standalone GPL-3.0 QS web platform for the Ethiopian construction community.
+  FastAPI + SQLAlchemy async + Alembic backend, Next.js 14 frontend. MoUDC format, ETB currency.
 
 # Project context (optional)
 # This is shown to AI when creating artifacts.

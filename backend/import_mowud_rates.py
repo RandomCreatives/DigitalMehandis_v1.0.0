@@ -12,7 +12,7 @@ AsyncSessionLocal = async_sessionmaker(engine, expire_on_commit=False)
 
 async def import_all():
     parser = MoWUDCostParser()
-    attachments_dir = "../attachments"
+    attachments_dir = "../data/rates"
 
     async with AsyncSessionLocal() as db:
         # Create the Source record

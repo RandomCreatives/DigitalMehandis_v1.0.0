@@ -3,7 +3,7 @@ import json
 
 parser = MoWUDCostParser()
 # Page 10 (index 9) had the sample data I saw earlier
-items = parser.parse_page("attachments/Page 10.pdf", 0) # The file is only 1 page long since they are separate files
+items = parser.parse_page("data/rates/Page 10.pdf", 0) # The file is only 1 page long since they are separate files
 
 print(f"Found {len(items)} items")
 for item in items[:5]:

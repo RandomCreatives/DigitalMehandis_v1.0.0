@@ -1,7 +1,7 @@
 import pdfplumber
 import os
 
-path = "attachments/Page 1.pdf"
+path = "data/rates/Page 1.pdf"
 if os.path.exists(path):
     with pdfplumber.open(path) as pdf:
         page = pdf.pages[0]
