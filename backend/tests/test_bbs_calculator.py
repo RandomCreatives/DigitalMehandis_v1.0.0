@@ -1,6 +1,6 @@
 """Unit tests for BBS calculation logic."""
 import pytest
-from app.utils.bbs_calculator import BBSCalculator
+from app.modules.bbs.calculator import BBSCalculator
 
 
 def test_straight_bar_cutting_length():

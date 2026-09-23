@@ -1,4 +1,4 @@
-# EthioQS Architecture
+# Digital Mehandis Architecture
 
 ## System Overview
 
@@ -18,32 +18,75 @@
 
 ## Backend Structure
 
+Every feature is a **self-contained module** in `app/modules/<name>/`.
+
 ```
-app/
-├── api/v1/          # Route handlers (thin layer, delegates to utils)
-│   ├── auth.py      # JWT register/login/refresh
-│   ├── projects.py  # Project CRUD
-│   ├── drawings.py  # File upload & serving
-│   ├── takeoff.py   # Take-off item CRUD
-│   ├── bbs.py       # BBS bar CRUD + cutting list
-│   ├── boq.py       # BOQ generation + exports
-│   └── rates.py     # Global rate database
+backend/app/
+├── main.py              # create_app(): CORS, module loader, /health
 ├── core/
-│   ├── config.py    # Pydantic settings (env vars)
-│   ├── security.py  # JWT + bcrypt
-│   └── constants.py # Enums, unit weights, WBS
+│   ├── config.py        # Pydantic settings (env vars)
+│   ├── security.py      # JWT + bcrypt
+│   ├── deps.py          # get_current_user dependency
+│   ├── module_loader.py # discovers app/modules/*/router.py
+│   ├── constants.py     # unit weights, enums
+│   ├── files.py         # upload validation & storage
+│   └── logging.py
 ├── db/
-│   ├── models.py    # SQLAlchemy ORM models
-│   ├── session.py   # Async DB session
-│   └── migrations/  # Alembic
-├── schemas/         # Pydantic request/response models
-└── utils/
-    ├── bbs_calculator.py  # Cutting length & weight logic
-    ├── boq_generator.py   # BOQ assembly from takeoff + rates
-    ├── exporters.py       # Excel (openpyxl) + PDF (reportlab)
-    ├── file_handler.py    # Upload validation & storage
-    └── seed_rates.py      # Pre-loaded Ethiopian rate database
+│   ├── base.py          # DeclarativeBase
+│   ├── types.py         # GUID, JSONType (portable PostgreSQL/SQLite), now_utc
+│   ├── registry.py      # imports every module's models.py
+│   ├── session.py       # async engine + get_db
+│   └── migrations/      # Alembic (single baseline 0001 + future revisions)
+└── modules/
+    ├── auth/            # users, register/login/refresh
+    ├── projects/
+    ├── drawings/        # upload, DXF layers/blocks, revisions, mapping templates
+    ├── cad/             # library: DXF/PDF extraction, classification, conversion
+    ├── calibration/  measurements/  elements/
+    ├── takeoff/         # take-off items, suggested & federated quantities
+    ├── boq/             # BOQ generation + Excel/PDF exporters
+    ├── boq_items/       # traceable BOQ items + quantity sources
+    ├── bbs/             # bar bending schedule + calculator
+    ├── rates/  cost_library/  rate_matching/   # rates, MoUDC library, pricing
+    └── audit/
 ```
+
+### Module convention
+
+| File | Purpose |
+|---|---|
+| `models.py` | SQLAlchemy models owned by this module (use `GUID`, `JSONType` from `app.db.types`) |
+| `schemas.py` | Pydantic request/response models |
+| `service.py` / other `*.py` | Business logic — no FastAPI imports |
+| `router.py` | `router = APIRouter(...)`; thin HTTP layer, auto-registered under `/api/v1` |
+| `__init__.py` | Docstring; optional `EXTRA_ROUTERS = ["other_router"]` |
+
+Rules:
+- A new module is picked up automatically; add its `models` import to `app/db/registry.py`.
+- Cross-module imports go through the other module's `models`/`service`, never its `router`.
+- A router that fails to import **crashes startup** (no silent skipping).
+- Schema changes: edit `models.py`, then `alembic revision --autogenerate -m "..."`.
+- `tests/test_structure.py` enforces these rules.
+
+### Table ownership
+
+| Module | Tables |
+|---|---|
+| `audit` | `audit_logs` |
+| `auth` | `users` |
+| `bbs` | `bbs_bars` |
+| `boq` | `boq_outputs` |
+| `boq_items` | `boq_item_sources`, `boq_items`, `quantity_sources` |
+| `cad` | `block_mappings_v2`, `drawing_revisions`, `dxf_analysis_jobs`, `dxf_blocks`, `dxf_entities`, `dxf_layers`, `layer_mapping_templates`, `layer_mappings_v2`, `quantity_suggestions` |
+| `calibration` | `drawing_calibrations` |
+| `cost_library` | `rate_items`, `rate_sources`, `raw_rate_import_rows` |
+| `drawings` | `drawing_pages`, `drawings` |
+| `elements` | `project_elements` |
+| `measurements` | `measurements` |
+| `projects` | `projects` |
+| `rate_matching` | `element_rate_matches`, `project_pricing_settings` |
+| `rates` | `rates` |
+| `takeoff` | `federated_quantities`, `suggested_quantities`, `takeoff_items` |
 
 ## Frontend Structure
 

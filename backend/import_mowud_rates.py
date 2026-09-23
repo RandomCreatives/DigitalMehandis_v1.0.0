@@ -2,8 +2,8 @@ import asyncio
 import os
 import uuid
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker
-from app.db.models_cost import RateSource, RateItem
-from app.utils.cost_parser import MoWUDCostParser
+from app.modules.cost_library.models import RateSource, RateItem
+from app.modules.cost_library.parser import MoWUDCostParser
 from app.core.config import get_settings
 
 settings = get_settings()

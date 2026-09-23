@@ -8,7 +8,7 @@ from uuid import uuid4
 # Add backend to sys.path to allow imports
 sys.path.append(os.path.join(os.getcwd(), "backend"))
 
-from app.services.extraction_service import ExtractionService
+from app.modules.cad.extraction import ExtractionService
 
 async def convert(pdf_path: str, output_path: str):
     print(f"Converting {pdf_path}...")

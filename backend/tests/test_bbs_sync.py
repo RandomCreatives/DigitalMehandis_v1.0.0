@@ -1,5 +1,5 @@
 import pytest
-from app.db.models import Project
+from app.modules.projects.models import Project
 from uuid import uuid4
 from sqlalchemy import select
 
@@ -20,7 +20,7 @@ async def auth_header(client):
 
 @pytest.fixture
 async def test_project(db_session, auth_header, client):
-    from app.db.models import User
+    from app.modules.auth.models import User
     res = await db_session.execute(select(User).where(User.email == "bbs@example.com"))
     user = res.scalar_one()
 
@@ -81,7 +81,7 @@ async def test_bbs_sync_to_boq(client, auth_header, test_project, db_session):
     assert sync_resp.json()["count"] == 1  # Only Ø12 in SUBSTRUCTURE
 
     # 3. Verify SuggestedQuantity was created
-    from app.db.models import SuggestedQuantity
+    from app.modules.takeoff.models import SuggestedQuantity
 
     res = await db_session.execute(
         select(SuggestedQuantity).where(SuggestedQuantity.project_id == test_project.id)

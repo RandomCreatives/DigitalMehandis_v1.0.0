@@ -1,15 +1,16 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from app import __version__
 from app.core.config import get_settings
-from app.core.modules.loader import load_modules
+from app.core.module_loader import load_modules
 
 settings = get_settings()
 
 def create_app() -> FastAPI:
     app = FastAPI(
         title="Digital Mehandis API",
-        description="Ethiopian Construction ERP — Modular Design",
-        version="3.0.0",
+        description="Quantity surveying platform for the Ethiopian construction community",
+        version=__version__,
         docs_url="/api/docs",
         redoc_url="/api/redoc",
     )
@@ -27,7 +28,7 @@ def create_app() -> FastAPI:
 
     @app.get("/health")
     async def health():
-        return {"status": "ok", "service": "Digital Mehandis", "version": "3.0.0"}
+        return {"status": "ok", "service": "Digital Mehandis", "version": __version__}
 
     return app
 

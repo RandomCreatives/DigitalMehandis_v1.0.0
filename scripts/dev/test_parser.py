@@ -1,4 +1,4 @@
-from app.utils.cost_parser import MoWUDCostParser
+from app.modules.cost_library.parser import MoWUDCostParser
 import json
 
 parser = MoWUDCostParser()
