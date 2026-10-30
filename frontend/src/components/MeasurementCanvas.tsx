@@ -7,7 +7,8 @@ import React, {
 } from "react";
 // Fabric.js v5 exports as { fabric } — unwrap the namespace
 import * as fabricModule from "fabric";
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+// Fabric's v5 typings are loose here; the rule this used to disable is not
+// configured in this project, and naming an unknown rule is itself a lint error.
 const fabric = (fabricModule as any).fabric as typeof import("fabric")["fabric"];
 import * as pdfjsLib from "pdfjs-dist";
 import { api as axiosApi } from "@/lib/api";
