@@ -62,7 +62,7 @@ From the dashboard → **New Project** → enter:
    - Bar diameter (6–32mm)
    - Bar shape (Straight, L-Shape, Hook, U-Shape, Spiral)
    - Quantity, clear length, cover, hook length
-   - Standard (EBCS 3 or BS 8666)
+   - Code of practice for laps: **ES EN 1992-1-1:2015** (formula, default) or **EBCS-2:1995** (site practice)
 4. The **live preview** shows cutting length, weight, and lap length before saving
 5. Click **Add Bar** to save
 6. View the **Cutting List** for supplier batch-cutting orders
@@ -78,7 +78,33 @@ From the dashboard → **New Project** → enter:
 | U-Shape | 2 × clear length + hook length − 2d + 2 × cover |
 | Spiral | 2 × clear length − 4d |
 
-Lap length: **50d** (EBCS 3 tension) or **40d** (BS 8666)
+Lap length depends on the code of practice you select:
+
+| Code | Method | Value for φ16, C25/30 |
+|------|--------|-----------------------|
+| **ES EN 1992-1-1:2015 §8.4.4** (default) | `l_0 = α₁α₂α₃α₅α₆·l_b,rqd`, computed from f_bd | **969 mm** |
+| **EBCS-2:1995** (site practice) | 50φ approximation | 800 mm |
+
+> **Citations that are correct for a BBS:** ES EN 1992-1-1:2015 §8 for anchorage and
+> laps, BS 8666 for shape codes and bend deductions. *EBCS-3 is Design of Steel
+> Structures* — it does not govern reinforced-concrete bar schedules. ES EN
+> 1992-1-1:2015 superseded and withdrew EBCS-2:1995, but Ethiopian site practice
+> still says "EBCS", so both are supported. Every bar records which code produced
+> its lap length, so the schedule can be audited.
+
+### Concrete grade conventions
+
+Ethiopian BoQs say "C-25"; drawings say "C25/30". **They are not the same mix:**
+
+| Convention | Code | Meaning of "C-25" | Cylinder f_ck | Rate key |
+|------------|------|-------------------|---------------|----------|
+| Cube | EBCS-2:1995 | f_cu = 25 MPa | 20.0 MPa | `C20/25` |
+| Cylinder | ES EN 1992-1-1:2015 | f_ck,cyl = 25 MPa | 25.0 MPa | `C25/30` |
+
+`f_ck,cyl ≈ 0.80 × f_cu`. The app records which convention each element was priced
+in and keys rates on the convention-aware key, so a cube price can never be matched
+to a cylinder-specified item. On a φ16 bar this changes the scheduled lap by
+**155 mm** — and on a concrete price it changes the mix you are buying.
 
 ---
 
@@ -103,4 +129,4 @@ EthioQS comes pre-loaded with Ethiopian construction rates including:
 - Roofing (EGA sheets, timber trusses)
 - Doors & windows
 
-Rates are based on EBCS 2023 and Addis Ababa market surveys (2024).
+Rates are based on MoWUD direct-cost publications and Addis Ababa market surveys (2024).

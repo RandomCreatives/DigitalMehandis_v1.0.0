@@ -19,7 +19,7 @@ const SHAPE_ICON: Record<string, string> = {
 const EMPTY: BBSBarCreate = {
   member_name: "", bar_diameter_mm: 16, bar_shape: "STRAIGHT",
   quantity: 1, clear_length_m: 1.0, hook_length_mm: 0,
-  cover_top_mm: 50, cover_bottom_mm: 50, section: "SUBSTRUCTURE", standard: "EBCS_3",
+  cover_top_mm: 50, cover_bottom_mm: 50, section: "SUBSTRUCTURE", standard: "ES_EN_1992_1_1", concrete_grade: "C25/30",
 };
 
 export default function BBSPage() {
@@ -47,7 +47,13 @@ export default function BBSPage() {
 
   const previewCutting = calcCuttingLength(form.bar_shape, form.clear_length_m, form.bar_diameter_mm, form.hook_length_mm, Math.max(form.cover_top_mm ?? 50, form.cover_bottom_mm ?? 50));
   const previewWeight  = calcWeight(form.bar_diameter_mm, previewCutting);
-  const previewLap     = calcLapLength(form.bar_diameter_mm, form.standard);
+  const previewLap     = (() => {
+    try {
+      return `${calcLapLength(form.bar_diameter_mm, form.standard, form.concrete_grade)} mm`;
+    } catch (err) {
+      return (err as Error).message;
+    }
+  })();
 
   async function addBar(e: React.FormEvent) {
     e.preventDefault();
@@ -172,9 +178,16 @@ export default function BBSPage() {
                 <div>
                   <label className="block text-label-caps text-on-surface-variant mb-1">Standard</label>
                   <select className="input" value={form.standard} onChange={(e) => upd("standard", e.target.value)}>
-                    <option value="EBCS_3">EBCS 3</option>
-                    <option value="BS_8666">BS 8666</option>
+                    <option value="ES_EN_1992_1_1">ES EN 1992-1-1:2015 (EC2)</option>
+                    <option value="EBCS_2">EBCS-2:1995 (site practice)</option>
                   </select>
+                </div>
+                <div>
+                  <label className="block text-label-caps text-on-surface-variant mb-1">Concrete grade</label>
+                  {/* Convention matters: "C-25" is f_cu=25 under EBCS-2 but
+                      f_ck,cyl=25 under EC2 — two different mixes. */}
+                  <input className="input" placeholder="C25/30" value={form.concrete_grade ?? ""}
+                    onChange={(e) => upd("concrete_grade", e.target.value)} />
                 </div>
 
                 {/* Live preview */}
@@ -189,7 +202,7 @@ export default function BBSPage() {
                   </div>
                   <div>
                     <span className="text-on-surface-variant text-xs">Lap Length</span>
-                    <p className="font-bold text-on-surface">{previewLap} mm</p>
+                    <p className="font-bold text-on-surface">{previewLap}</p>
                   </div>
                 </div>
 

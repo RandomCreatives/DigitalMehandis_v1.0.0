@@ -1,10 +1,14 @@
 import uuid
 from datetime import datetime
 from sqlalchemy import String, Boolean, Integer, Text, ForeignKey, DateTime, Float, Numeric
+from sqlalchemy import JSON
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.db.base import Base
 from app.db.models import GUID, now_utc
+
+#: JSONB on PostgreSQL, plain JSON elsewhere (SQLite is used by CI and local dev).
+JSONType = JSON().with_variant(JSONB, "postgresql")
 
 class DXFLayer(Base):
     __tablename__ = "dxf_layers"
@@ -40,7 +44,7 @@ class DXFEntity(Base):
     drawing_id: Mapped[uuid.UUID] = mapped_column(GUID(), ForeignKey("drawings.id", ondelete="CASCADE"), nullable=False)
     layer_name: Mapped[str | None] = mapped_column(String(255))
     entity_type: Mapped[str] = mapped_column(String(50), nullable=False)
-    geometry_json: Mapped[dict | None] = mapped_column(JSONB)
+    geometry_json: Mapped[dict | None] = mapped_column(JSONType)
     length: Mapped[float | None] = mapped_column(Float)
     area: Mapped[float | None] = mapped_column(Float)
     text_content: Mapped[str | None] = mapped_column(Text)
@@ -83,7 +87,7 @@ class LayerMappingTemplate(Base):
     user_id: Mapped[uuid.UUID | None] = mapped_column(GUID(), ForeignKey("users.id", ondelete="SET NULL"))
     name: Mapped[str] = mapped_column(String(255), nullable=False)
     description: Mapped[str | None] = mapped_column(Text)
-    mappings_json: Mapped[dict] = mapped_column(JSONB, nullable=False)
+    mappings_json: Mapped[dict] = mapped_column(JSONType, nullable=False)
     is_public: Mapped[bool] = mapped_column(Boolean, default=False)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now_utc)
 
@@ -95,7 +99,7 @@ class DrawingRevision(Base):
     revision_number: Mapped[int] = mapped_column(Integer, nullable=False)
     file_path: Mapped[str] = mapped_column(String(500), nullable=False)
     uploaded_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now_utc)
-    diff_summary_json: Mapped[dict | None] = mapped_column(JSONB)
+    diff_summary_json: Mapped[dict | None] = mapped_column(JSONType)
 
 class DXFAnalysisJob(Base):
     __tablename__ = "dxf_analysis_jobs"
@@ -124,7 +128,7 @@ class QuantitySuggestion(Base):
     source_layer: Mapped[str | None] = mapped_column(String(255))
     source_block: Mapped[str | None] = mapped_column(String(255))
     entity_count: Mapped[int] = mapped_column(Integer, default=0)
-    entity_ids: Mapped[dict | None] = mapped_column(JSONB) # array of handle/id
+    entity_ids: Mapped[dict | None] = mapped_column(JSONType) # array of handle/id
 
     raw_value: Mapped[float] = mapped_column(Float)
     final_value: Mapped[float] = mapped_column(Float)

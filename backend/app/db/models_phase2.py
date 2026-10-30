@@ -6,7 +6,7 @@ Class order matters for SQLAlchemy forward references:
 """
 import uuid
 from datetime import datetime, timezone
-from sqlalchemy import String, Boolean, Integer, Text, ForeignKey, DateTime, JSON, Float
+from sqlalchemy import String, Boolean, Integer, Text, ForeignKey, DateTime, JSON, Float, Index
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.db.base import Base
@@ -75,10 +75,23 @@ class DrawingCalibration(Base):
 
 class ProjectElement(Base):
     __tablename__ = "project_elements"
+    __table_args__ = (
+        # One row per element per revision; ext_uid is the stable handle.
+        Index("uq_project_element_uid_revision", "project_id", "ext_uid", "revision", unique=True),
+    )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     project_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("projects.id", ondelete="CASCADE"), nullable=False)
     element_code: Mapped[str] = mapped_column(String(50), nullable=False)
+    # Stable identity across drawing revisions. This is what makes revision
+    # diffs, variations (added / omitted / re-measured) and element-level
+    # progress possible. Assigned on first sight and never reused.
+    ext_uid: Mapped[str | None] = mapped_column(String(64), index=True)
+    # Drawing revision this row was measured from (e.g. "Rev A", "R2").
+    revision: Mapped[str | None] = mapped_column(String(40))
+    # Which strength convention ``material``/``specification`` grade is quoted
+    # in: EBCS_2 (cube) or ES_EN_1992_1_1 (cylinder). Null = unstated.
+    grade_standard: Mapped[str | None] = mapped_column(String(40))
     element_type: Mapped[str] = mapped_column(String(50), nullable=False)
     discipline: Mapped[str] = mapped_column(String(50), nullable=False)
     section: Mapped[str] = mapped_column(String(50), nullable=False)

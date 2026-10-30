@@ -15,7 +15,11 @@ class BBSBarCreate(BaseModel):
     cover_bottom_mm: int = 50
     section: str | None = None
     notes: str | None = None
-    standard: str = "EBCS_3"
+    #: Code of practice for the lap calculation.
+    #: ES_EN_1992_1_1 (default, formula) | EBCS_2 (site practice) | BS_8666 (shapes only)
+    standard: str = "ES_EN_1992_1_1"
+    #: Concrete grade as written on the BoQ/drawing, e.g. "C25/30" or "C-25".
+    concrete_grade: str | None = None
 
 
 class BBSBarUpdate(BaseModel):
@@ -29,6 +33,7 @@ class BBSBarUpdate(BaseModel):
     cover_bottom_mm: int | None = None
     section: str | None = None
     notes: str | None = None
+    concrete_grade: str | None = None
 
 
 class BBSBarOut(BaseModel):
@@ -44,6 +49,12 @@ class BBSBarOut(BaseModel):
     cover_top_mm: int
     cover_bottom_mm: int
     lap_length_mm: int | None
+    #: Which code produced lap_length_mm, plus its citation -- so the schedule
+    #: can be audited without reading the source.
+    design_code: str | None = None
+    design_code_title: str | None = None
+    citation: str | None = None
+    concrete_grade: str | None = None
     cutting_length_m: float | None = None
     weight_per_unit_kg: float | None = None
     total_weight_kg: float | None = None

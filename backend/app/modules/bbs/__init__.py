@@ -6,7 +6,12 @@ from app.db.session import get_db
 from app.db.models import BBSBar, Project, User, SuggestedQuantity
 from app.schemas.bbs import BBSBarCreate, BBSBarUpdate, BBSBarOut, CuttingListItem
 from app.dependencies import get_current_user
-from app.utils.bbs_calculator import BBSCalculator
+from app.utils.bbs_calculator import (
+    BBSStandardError,
+    BBSCalculator,
+    DEFAULT_STANDARD,
+    resolve_standard,
+)
 
 router = APIRouter(prefix="/projects/{project_id}/bbs", tags=["bbs"])
 
@@ -21,7 +26,15 @@ def _bar_mark(index: int) -> str:
     return f"B{index}"
 
 
-def _enrich(bar: BBSBar, standard: str = "EBCS_3") -> dict:
+def _enrich(bar: BBSBar, standard: str | None = None) -> dict:
+    """Attach computed geometry, weight and the lap audit trail to a stored bar.
+
+    The code of practice comes from the row itself where it was recorded, so a
+    bar entered under the old hard-coded rule keeps that basis (and is labelled
+    as such) instead of being silently re-derived under a different code.
+    """
+    if standard is None:
+        standard = getattr(bar, "design_code", None) or DEFAULT_STANDARD
     raw = {
         "bar_shape": bar.bar_shape,
         "clear_length_m": float(bar.clear_length_m),
@@ -31,7 +44,9 @@ def _enrich(bar: BBSBar, standard: str = "EBCS_3") -> dict:
         "cover_bottom_mm": bar.cover_bottom_mm or 50,
         "quantity": bar.quantity,
     }
-    enriched = BBSCalculator.enrich_bar(raw, standard)
+    enriched = BBSCalculator.enrich_bar(
+        raw, standard, getattr(bar, "concrete_grade", None)
+    )
     return {
         "id": bar.id,
         "project_id": bar.project_id,
@@ -45,6 +60,10 @@ def _enrich(bar: BBSBar, standard: str = "EBCS_3") -> dict:
         "cover_top_mm": bar.cover_top_mm,
         "cover_bottom_mm": bar.cover_bottom_mm,
         "lap_length_mm": enriched["lap_length_mm"],
+        "design_code": enriched["design_code"],
+        "design_code_title": enriched["lap_detail"]["design_code_title"],
+        "citation": enriched["citation"],
+        "concrete_grade": getattr(bar, "concrete_grade", None),
         "cutting_length_m": enriched["cutting_length_m"],
         "weight_per_unit_kg": enriched["weight_per_unit_kg"],
         "total_weight_kg": enriched["total_weight_kg"],
@@ -70,7 +89,14 @@ async def add_bar(project_id: UUID, payload: BBSBarCreate, user: User = Depends(
     count_result = await db.execute(select(BBSBar).where(BBSBar.project_id == project_id))
     count = len(count_result.scalars().all())
 
-    lap = BBSCalculator.calculate_lap_length(payload.bar_diameter_mm, payload.standard)
+    try:
+        lap_detail = BBSCalculator.lap_length_detail(
+            payload.bar_diameter_mm, payload.standard, payload.concrete_grade
+        )
+    except BBSStandardError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+    lap = int(round(lap_detail["lap_length_mm"]))
+    design_code = resolve_standard(payload.standard).key
 
     bar = BBSBar(
         project_id=project_id,
@@ -85,6 +111,8 @@ async def add_bar(project_id: UUID, payload: BBSBarCreate, user: User = Depends(
         cover_top_mm=payload.cover_top_mm,
         cover_bottom_mm=payload.cover_bottom_mm,
         lap_length_mm=lap,
+        design_code=design_code,
+        concrete_grade=payload.concrete_grade,
         section=payload.section,
         notes=payload.notes,
     )
@@ -175,7 +203,11 @@ async def sync_to_boq(
             "cover_bottom_mm": bar.cover_bottom_mm or 50,
             "quantity": bar.quantity,
         }
-        enriched = BBSCalculator.enrich_bar(raw)
+        enriched = BBSCalculator.enrich_bar(
+            raw,
+            getattr(bar, "design_code", None) or DEFAULT_STANDARD,
+            getattr(bar, "concrete_grade", None),
+        )
         totals[bar.bar_diameter_mm] = totals.get(bar.bar_diameter_mm, 0.0) + enriched["total_weight_kg"]
 
     # Create SuggestedQuantity entries

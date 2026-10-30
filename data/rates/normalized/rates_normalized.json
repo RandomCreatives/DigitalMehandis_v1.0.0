@@ -1,0 +1,4279 @@
+{
+  "schema_version": 1,
+  "source": {
+    "title": "MoWUD Direct Cost, 3rd Quarter 2018",
+    "issuing_authority": "Addis Ababa City Administration",
+    "origin": "scanned PDF; amounts repaired from OCR damage",
+    "currency": "ETB",
+    "calendar": "EC"
+  },
+  "generated_by": "backend/scripts/normalize_rates.py",
+  "row_count": 371,
+  "rows": [
+    {
+      "item_no": "4.1.1",
+      "description": "C-15 Concrete (Mechanical Mix) 1 :2:4 with admixture",
+      "unit": "m³",
+      "amount": 18040.92,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.1.2",
+      "description": "C-15 Concrete (Mechanical Mix) 1 :2:4 for Footing ,Beam and slab",
+      "unit": "m³",
+      "amount": 17376.92,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "'I'->'1'",
+        "space used as decimal point"
+      ]
+    },
+    {
+      "item_no": "4.1.3",
+      "description": "C-1 5 Concrete (Mechanical Mix) 1:2:4 for Column ,shear wall",
+      "unit": "m³",
+      "amount": 16215.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.13.6",
+      "description": "Supply and cast Reinforced concrete quality C-25,378 kg of cement/ m3 with water tight chemical in accordance with manufacturer Technicaldata sheet instruction, filled into formwork and vibrated around rod reinforcement (formwork and reinforcement measured separately).",
+      "unit": "m³",
+      "amount": 23106.85,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "'l'->'1'",
+        "cement quantity unit 'Kg' -> 'kg'",
+        "'fromwork' -> 'formwork'"
+      ]
+    },
+    {
+      "item_no": "4.13.6",
+      "description": "Supply and cast Reinforced concrete quality C-25,378 kg of cement/ m3 with water tight chemical in accordance with manufacturer Technical data sheet instruction, filled into from work and vibrated around rod reinforcement (formwork and reinforcement measured separately) Ready Mix. Unit price Shall include Water tight & Concrete bondage chemicals as well as all the necessary works.",
+      "unit": "m³",
+      "amount": 22556.85,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "cement quantity unit 'Kg' -> 'kg'",
+        "'reinfoicement' -> 'reinforcement'"
+      ]
+    },
+    {
+      "item_no": "4.13.7",
+      "description": "Supply and cast Reinforced concrete quality C-30, 420 kg of cement/ m3 with water tight chemical in accordance with manufacturer Technical data sheet instruction, filled into from work and vibrated around rod reinforcement (formwork and reinforcement measured separately).",
+      "unit": "m³",
+      "amount": 23736.85,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "cement quantity unit 'Kg' -> 'kg'",
+        "'vibiated' -> 'vibrated'"
+      ]
+    },
+    {
+      "item_no": "4.13.7",
+      "description": "Supply and cast Reinforced concrete quality C-40, 448 kg of cement/ m3 with water tight chemical in accordance with manufacturer Technical data sheet instruction, filled into formwork and vibrated around rod reinforcement (formwork and reinforcement measured separately}.",
+      "unit": "m³",
+      "amount": 24051.85,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "cement quantity unit 'Kg' -> 'kg'",
+        "'reinfoicement' -> 'reinforcement'",
+        "'fromwork' -> 'formwork'"
+      ]
+    },
+    {
+      "item_no": "4.13.7",
+      "description": "Supply and cast Reinforced concrete quality C-30, 420 kg of cement/ m3 with water tight chemical in accordance with manufacturer Technical data sheet instruction, filled into from work and vibrated around rod reinforcement (formwork and reinforcement measured separately) Ready Mix . Unit price Shall include Water tight & Concrete bondage chemicals as well as all the necessary works.",
+      "unit": "m³",
+      "amount": 25186.85,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "space used as decimal point",
+        "cement quantity unit 'Kg' -> 'kg'",
+        "'Concrète' -> 'Concrete'",
+        "'concrète' -> 'concrete'",
+        "'chernicals' -> 'chemicals'"
+      ]
+    },
+    {
+      "item_no": "4.13.7",
+      "description": "Supply and cast Reinforced concrete quality C-40, 504 kg of cement/ m with water tight chemical in accordance with manufacturerTechnical data sheet insti uction, filled into from work and vibrated around rod reinforcement (formwork and reinforcement measured separately) Ready Mix. Unit price 8hall include Water tight & Concrete bondage chemicals as well as all the necessary works.",
+      "unit": "m³",
+      "amount": 23501.85,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "mixed separators normalised",
+        "cement quantity unit 'Kg' -> 'kg'",
+        "'tormwork' -> 'formwork'"
+      ]
+    },
+    {
+      "item_no": "4.14.1",
+      "description": "Wooden form work For Beam, Footing & Co1innn.sub structure",
+      "unit": "m²",
+      "amount": 1151.94,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.14.2",
+      "description": "Wooden for in work For Super structure column , Floor beans & slab",
+      "unit": "m²",
+      "amount": 1177.21,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "mixed separators normalised"
+      ]
+    },
+    {
+      "item_no": "4.14.3",
+      "description": "I 8mm thick Fair Faced Form work (high quality plywood) with crane",
+      "unit": "m²",
+      "amount": 1731.63,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "'playwood' -> 'plywood'",
+        "'wiih' -> 'with'"
+      ]
+    },
+    {
+      "item_no": "4.14.4",
+      "description": "Wooden scaffolding",
+      "unit": null,
+      "amount": 117.0,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "'scafolding' -> 'scaffolding'"
+      ]
+    },
+    {
+      "item_no": "4.15.1",
+      "description": "Local Re-Bar Grade 75: Dra. 6mm (Sub structure)",
+      "unit": "kg",
+      "amount": 259.15,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.10",
+      "description": "Local Re-Bar Grade 75: Dia. 6mm (Super structure)",
+      "unit": "kg",
+      "amount": 261.26,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.11",
+      "description": "Local Re-Bar Grade 75: Dia. 8mm (Super structure)",
+      "unit": "kg",
+      "amount": 261.26,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.12",
+      "description": "Local Re-Bar Grade 75: Dia. 10mm (Super structure)",
+      "unit": "kg",
+      "amount": 261.26,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.13",
+      "description": "Local Re-Bar Grade 75: Dia. 12mm (Super structure)",
+      "unit": "kg",
+      "amount": 253.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.14",
+      "description": "Local Re-Bar Grade 75: Dia. l4mm (Super structure)",
+      "unit": "kg",
+      "amount": 253.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.15",
+      "description": "Local Re-Bar Grade 75: Dia. 16mm (Super structure)",
+      "unit": "kg",
+      "amount": 253.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.16",
+      "description": "Local Re-Bar Grade 75: Dia. 20mm (Super structure)",
+      "unit": "kg",
+      "amount": 253.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.17",
+      "description": "Local Re-Bar Grade 75: Dia. 24mm (Super structure)",
+      "unit": "kg",
+      "amount": 253.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.18",
+      "description": "Local Re-Bar Grade 75: Dia. 32mm (Super structure)",
+      "unit": "kg",
+      "amount": 253.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.2",
+      "description": "Local Re-Bar Grade 75: Dia. 8mm (Sub structure)",
+      "unit": "kg",
+      "amount": 254.24,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.3",
+      "description": "local Re-Bar Grade 75: Dia. 10mm (Sub structutc)",
+      "unit": "kg",
+      "amount": 254.24,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.4",
+      "description": "Local Re-Bar Grade 75: Dia, 12mm (Sub structure)",
+      "unit": "kg",
+      "amount": 250.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.5",
+      "description": "Local Re-Bar Grade 75: Dia. 14 mm (Sub structure)",
+      "unit": "kg",
+      "amount": 250.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.6",
+      "description": "Local Re-Bar Grade 75: Dia. 16mm (Sub structure)",
+      "unit": "kg",
+      "amount": 250.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.7",
+      "description": "Local Re-Bar Grade 75: Dia. 20mm (Sub structure)",
+      "unit": "kg",
+      "amount": 250.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.8",
+      "description": "Local Re-Bar Grade 75: Dia. 24mm (Sub structure)",
+      "unit": "kg",
+      "amount": 250.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.9",
+      "description": "Local Re-Bar Grade 75: Dia. 32 mm (Sub structure)",
+      "unit": "kg",
+      "amount": 250.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.2.1",
+      "description": "C-20 Concrete (Mechanical Mix) 1 :2:3 with admixture",
+      "unit": "m³",
+      "amount": 17033.09,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.2.2",
+      "description": "C-20 Concrete (Mechanical Mix) 1:2:3 for Footing ,Beam and slab",
+      "unit": "m³",
+      "amount": 16369.09,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "'l'->'1'",
+        "collapsed whitespace inside amount"
+      ]
+    },
+    {
+      "item_no": "4.2.3",
+      "description": "C-20 Concrete (Mechanical Mix) 1:2:3 for Column ,shear wall",
+      "unit": "m³",
+      "amount": 16971.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.3.1",
+      "description": "C-25 Concrete (Mechanical Mix) l:2:3 with admixture",
+      "unit": "m³",
+      "amount": 19822.41,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "'l'->'1'",
+        "collapsed whitespace inside amount"
+      ]
+    },
+    {
+      "item_no": "4.3.2",
+      "description": "C-25 Concrete (Mechanical Mix) l:2:3 for Footing ,Beam and slab",
+      "unit": "m³",
+      "amount": 19158.42,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "'.' used as thousands separator"
+      ]
+    },
+    {
+      "item_no": "4.3.3",
+      "description": "C-25 Concrete (Mechanical Mix) 1:2:3 for Column ,shear wall",
+      "unit": "m³",
+      "amount": 19761.29,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.3.4",
+      "description": "C-25 Concrete (Mechanical Mix) l:2:3 for 10cm thick slab",
+      "unit": "m²",
+      "amount": 1915.84,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "'l0cm' -> '10cm'"
+      ]
+    },
+    {
+      "item_no": "4.4.1",
+      "description": "C-3O Concrete (Mechanical Mix) 1 :2:3 with admixture",
+      "unit": "m³",
+      "amount": 20830.41,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.4.2",
+      "description": "C-30 Concrete (Mechanical Mix) I :2:S for Fooling ,Beam and slab",
+      "unit": "m³",
+      "amount": 20166.42,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.4.3",
+      "description": "C-30 Concrete (Mechanical lix) 1 :2:3 for Column ,shear wall",
+      "unit": "m³",
+      "amount": 20769.29,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.7.1",
+      "description": "C-25 Concrete (Mechanical Mix) 1 :2:3 with admixture",
+      "unit": "m³",
+      "amount": 20499.27,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.7.2",
+      "description": "C-25 Concrete (Mechanical Mix) 1 :2:3 for Beam and slab",
+      "unit": "m³",
+      "amount": 19835.27,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.7.3",
+      "description": "C-25 Concrete (Mechanical Mix) l:2:3 for Column ,shear wall",
+      "unit": "m³",
+      "amount": 20525.83,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.7.4",
+      "description": "C-25 Concrete (Mechanical Mix) I :2:o for Stair case",
+      "unit": "m³",
+      "amount": 21019.09,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.7.5",
+      "description": "C-25 Concrete (Mechanical Mix) 1 :2:3 for 15cm thick slab",
+      "unit": "m²",
+      "amount": 2873.76,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "'l5cm' -> '15cm'"
+      ]
+    },
+    {
+      "item_no": "4.7.6",
+      "description": "C-25 Concrete (Mechanical Mix) I :2:3 for 18cm thick slab",
+      "unit": "m²",
+      "amount": 3449.52,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "'g'->'9'"
+      ]
+    },
+    {
+      "item_no": "4.8.1",
+      "description": "C-30 Concrete (Mechanical iviix) l :2:3 with admixture e",
+      "unit": "m³",
+      "amount": 21507.27,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "'adiuixtui' -> 'admixture'"
+      ]
+    },
+    {
+      "item_no": "4.8.2",
+      "description": "C-30 Concrete (Mechanical Mix) l :2:u for Beam and slab",
+      "unit": "m³",
+      "amount": 20843.27,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.8.3",
+      "description": "C-30 Concrete (Mechanical Mix) 1 :2:o for Column ,shear wall",
+      "unit": "m³",
+      "amount": 21533.83,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.8.4",
+      "description": "C-30 Concrete (Mechanical Mix) 1:2:3 for Stair case",
+      "unit": "m³",
+      "amount": 22027.09,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "a",
+      "description": "C-7 Lean Concrete (Hand mix) (C-7)",
+      "unit": "m²",
+      "amount": 751.11,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "b",
+      "description": "C-5 Lean Concrete (Hand mix) (C-5)",
+      "unit": "m²",
+      "amount": 713.67,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "c",
+      "description": "C-15 10cm thick mass concrete pavement cost include hard core & 7cm",
+      "unit": "m²",
+      "amount": 3417.5,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "'l0cm' -> '10cm'"
+      ]
+    },
+    {
+      "item_no": "d",
+      "description": "Mortar production (ratio , 1:3)",
+      "unit": "m³",
+      "amount": 14858.24,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "'l'->'1'",
+        "'.' used as thousands separator"
+      ]
+    },
+    {
+      "item_no": "e",
+      "description": "Light Weight Concrete (ratio, 1:2:5)",
+      "unit": "m³",
+      "amount": 15504.69,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "f",
+      "description": "10cm Thick C-15 mass Concrete",
+      "unit": "m²",
+      "amount": 1561.29,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "g",
+      "description": "Supply & Apply polymer modified Semielastic cementitious coating",
+      "unit": "m²",
+      "amount": 842.11,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": [
+        "'Semielastic' -> 'Semielastic'"
+      ]
+    },
+    {
+      "item_no": "h",
+      "description": "Supply & Apply 4mm thick approved quality water proof membrane",
+      "unit": "m²",
+      "amount": 2024.39,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "i",
+      "description": "Supply & Apply ACRYLIC approved quality water proof.",
+      "unit": "m²",
+      "amount": 1391.3,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "i",
+      "description": "GRP Water Tanker with all fitting accessories",
+      "unit": "m³",
+      "amount": 85000.0,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "j",
+      "description": "l0mm thick stayrofoam expansion joint between ground floor slab &",
+      "unit": "ml",
+      "amount": 247.21,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "k",
+      "description": "20mm thick stayrofoam expansion joint between ground fioor slab &",
+      "unit": "ml",
+      "amount": 342.65,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Concrete Work.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.1.1",
+      "description": "Demolishing the lamera call",
+      "unit": "m²",
+      "amount": 170.46,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.1.10",
+      "description": "Desmantling Gutter",
+      "unit": "ml",
+      "amount": 34.06,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.1.11",
+      "description": "Desmantling down pipe",
+      "unit": "ml",
+      "amount": 69.46,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.1.12",
+      "description": "Demolishing the chipwood ceiling",
+      "unit": "m²",
+      "amount": 118.51,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.1.13",
+      "description": "Demolishing the tember ceiling",
+      "unit": "m²",
+      "amount": 164.59,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.1.15",
+      "description": "Dismantle the metal doors from the wall.",
+      "unit": "m²",
+      "amount": 167.98,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.1.16",
+      "description": "Dismantle the metal winriows from the wall.",
+      "unit": "m²",
+      "amount": 151.19,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.1.17",
+      "description": "Dismantling fascia board",
+      "unit": "ml",
+      "amount": 47.29,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.1.18",
+      "description": "Dismantling ridge & copping",
+      "unit": "ml",
+      "amount": 68.11,
+      "currency": "ETB",
+      "confidence": 0.9,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": [
+        "space used as decimal point",
+        "'.' used as thousands separator"
+      ]
+    },
+    {
+      "item_no": "1.1.19",
+      "description": "Demolishing the PVC floor tile",
+      "unit": "m²",
+      "amount": 45.14,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.1.20",
+      "description": "Demolishing kitchen sink",
+      "unit": "no.",
+      "amount": 69.48,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": [
+        "unit 'pcs' -> 'no.'"
+      ]
+    },
+    {
+      "item_no": "1.1.21",
+      "description": "Demolishing toilet WC,HW,turkish seat",
+      "unit": "no.",
+      "amount": 208.44,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": [
+        "unit 'pcs' -> 'no.'"
+      ]
+    },
+    {
+      "item_no": "1.1.22",
+      "description": "Dismantling of wooden door & window",
+      "unit": "m²",
+      "amount": 134.78,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.1.3",
+      "description": "Demolishing of wooden wall",
+      "unit": "m²",
+      "amount": 180.58,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.1.4",
+      "description": "Demolishing of gypsum wall",
+      "unit": "m²",
+      "amount": 90.29,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.1.5",
+      "description": "Demolishing the CIS roof",
+      "unit": "m²",
+      "amount": 51.14,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.1.6",
+      "description": "Demolishing of 7x5 cm zigba purlins",
+      "unit": "ml",
+      "amount": 25.57,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.1.7",
+      "description": "Demolishing of eucalyptus upper & lower chords",
+      "unit": "ml",
+      "amount": 79.17,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.1.8",
+      "description": "Dimolish RHS purline",
+      "unit": "ml",
+      "amount": 42.61,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.1.9",
+      "description": "Dimolishing the RHS truss.",
+      "unit": "ml",
+      "amount": 102.03,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.11",
+      "description": "30x120x3cm thick marble tread",
+      "unit": "no.",
+      "amount": 224.71,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": [
+        "unit 'pcs' -> 'no.'"
+      ]
+    },
+    {
+      "item_no": "1.2.12",
+      "description": "15x120x3cm thick marble riser",
+      "unit": "no.",
+      "amount": 168.53,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": [
+        "unit 'pcs' -> 'no.'"
+      ]
+    },
+    {
+      "item_no": "1.2.13",
+      "description": "Steel Structure",
+      "unit": "Kg",
+      "amount": 10.54,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.14",
+      "description": "Demolishing the ceramic wall tile",
+      "unit": "m²",
+      "amount": 112.95,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.14",
+      "description": "Concrete Sltuctures",
+      "unit": "m³",
+      "amount": 3166.43,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.15",
+      "description": "Demolishing the ceramic fioor tile (6 & 8 mm thick)",
+      "unit": "m²",
+      "amount": 127.07,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.15",
+      "description": "10cm thick HCB Structure",
+      "unit": "m²",
+      "amount": 76.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": [
+        "'l0cm' -> '10cm'"
+      ]
+    },
+    {
+      "item_no": "1.2.16",
+      "description": "I 5cm thick HCB Structure",
+      "unit": "m²",
+      "amount": 98.91,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.17",
+      "description": "20cm thick UCB Structure",
+      "unit": "m²",
+      "amount": 138.48,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.18",
+      "description": "\"1 errazzo floor",
+      "unit": "m²",
+      "amount": 147.46,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.20",
+      "description": "30x I20x3cm thick marble tread",
+      "unit": "m²",
+      "amount": 276.48,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.21",
+      "description": "15 x 120x3cm thick marble riser",
+      "unit": "m²",
+      "amount": 207.36,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.22",
+      "description": "Steel Structure",
+      "unit": "kg",
+      "amount": 12.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.23",
+      "description": "Demolishing the ceramic wall file",
+      "unit": "m²",
+      "amount": 147.46,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.29",
+      "description": "Concrete Structures",
+      "unit": "m³",
+      "amount": 3942.99,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.3",
+      "description": "Demolishing of 25cm thick hardcore",
+      "unit": "m²",
+      "amount": 53.78,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.30",
+      "description": "10 cm thick HCB Structure",
+      "unit": "m²",
+      "amount": 78.99,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.31",
+      "description": "15 cm thick HCB Structure",
+      "unit": "m²",
+      "amount": 101.56,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.32",
+      "description": "20cm thick HCB Structure",
+      "unit": "m²",
+      "amount": 142.19,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.32",
+      "description": "Concrete Structures",
+      "unit": "m³",
+      "amount": 4719.55,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.33",
+      "description": "Terrazzo fioor",
+      "unit": "m²",
+      "amount": 157.99,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.33",
+      "description": "10cm thick HCB Structure",
+      "unit": "m²",
+      "amount": 112.61,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.34",
+      "description": "15cm thick HCB Structure",
+      "unit": "m²",
+      "amount": 123.75,
+      "currency": "ETB",
+      "confidence": 0.9,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": [
+        "'l'->'1'",
+        "collapsed whitespace inside amount"
+      ]
+    },
+    {
+      "item_no": "1.2.35",
+      "description": "30x 120x3cm thick marble tread",
+      "unit": "m²",
+      "amount": 318.65,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.35",
+      "description": "20cm thick HCB Structure",
+      "unit": "m²",
+      "amount": 173.25,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.36",
+      "description": "15x l20x3cm thick marble riser",
+      "unit": "m²",
+      "amount": 238.99,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.37",
+      "description": "Steel Structure",
+      "unit": "kg",
+      "amount": 19.06,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.38",
+      "description": "Demolishing the ceramic wall lile",
+      "unit": "m²",
+      "amount": 181.98,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.38",
+      "description": "30x I 20x3crn thick marble tread",
+      "unit": "m²",
+      "amount": 370.42,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.39",
+      "description": "Demolishing the ceramic floor tile (6 & 8 mm thick)",
+      "unit": "m²",
+      "amount": 204.72,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.39",
+      "description": "15x 120x3 cm thick marble riser",
+      "unit": "m²",
+      "amount": 277.81,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.4",
+      "description": "Concrete Structures",
+      "unit": "m³",
+      "amount": 2533.86,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.40",
+      "description": "Steel Strutcture",
+      "unit": "kg",
+      "amount": 18.72,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.41",
+      "description": "Demolishing the ceramic wall tile",
+      "unit": "m²",
+      "amount": 216.49,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.41",
+      "description": "Concrete Structures",
+      "unit": "m³",
+      "amount": 5496.11,
+      "currency": "ETB",
+      "confidence": 0.9,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": [
+        "space used as decimal point"
+      ]
+    },
+    {
+      "item_no": "1.2.42",
+      "description": "Demolishing the ceramic floor tile (6 & 8 mm thick)",
+      "unit": "m²",
+      "amount": 243.55,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.42",
+      "description": "10cm thick HCB Structure",
+      "unit": "m²",
+      "amount": 113.51,
+      "currency": "ETB",
+      "confidence": 0.9,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": [
+        "'I'->'1'",
+        "collapsed whitespace inside amount"
+      ]
+    },
+    {
+      "item_no": "1.2.43",
+      "description": "15cm thick HCB Structure",
+      "unit": "m²",
+      "amount": 145.94,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": [
+        "'l5cm' -> '15cm'"
+      ]
+    },
+    {
+      "item_no": "1.2.44",
+      "description": "20cm thick HCB Structure",
+      "unit": "m²",
+      "amount": 204.31,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.45",
+      "description": "Terrazzo floor",
+      "unit": "m²",
+      "amount": 227.01,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.46",
+      "description": "Cement screed floor",
+      "unit": "m²",
+      "amount": 51.08,
+      "currency": "ETB",
+      "confidence": 0.9,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": [
+        "space used as decimal point"
+      ]
+    },
+    {
+      "item_no": "1.2.47",
+      "description": "30x120x3cm thick marble tread",
+      "unit": "m²",
+      "amount": 422.19,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.48",
+      "description": "15x l 20x3cm thick marble riser",
+      "unit": "m²",
+      "amount": 316.64,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.49",
+      "description": "Steel Structure",
+      "unit": "kg",
+      "amount": 21.14,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.5",
+      "description": "10 cm thick HCB Structure",
+      "unit": "m²",
+      "amount": 54.68,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.50",
+      "description": "Demolishing the ceramic wall tile",
+      "unit": "m²",
+      "amount": 251.01,
+      "currency": "ETB",
+      "confidence": 0.9,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": [
+        "'I'->'1'",
+        "collapsed whitespace inside amount"
+      ]
+    },
+    {
+      "item_no": "1.2.51",
+      "description": "Demolishing the ceramic floor tile (6 & 8 mm thick)",
+      "unit": "m²",
+      "amount": 282.38,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.6",
+      "description": "15 cm thick HCB StruCture",
+      "unit": "m²",
+      "amount": 72.61,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.7",
+      "description": "20 cm thick HCB Str Picture",
+      "unit": "m²",
+      "amount": 101.65,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1.2.8",
+      "description": "Terrazzo floor",
+      "unit": "m²",
+      "amount": 112.95,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Demolishing.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "",
+      "description": "20cm. Clearing on wet & black soil.",
+      "unit": "m²",
+      "amount": 96.92,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "1",
+      "description": "Back fill selected excavated mats. from the site. (Manualy)",
+      "unit": "m³",
+      "amount": 848.39,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.1.2",
+      "description": "to a depth exceeding 1500mm but not exceeding 3000mm",
+      "unit": "m³",
+      "amount": 814.79,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.1.3",
+      "description": "to a depth exceeding 3000mm but not exceeding 4500mm",
+      "unit": "m³",
+      "amount": 921.07,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.1.l",
+      "description": "to a depth not exceeding 1500mm",
+      "unit": "m³",
+      "amount": 706.15,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.2.1",
+      "description": "not exceeding 1.5m",
+      "unit": "m³",
+      "amount": 1406.61,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.2.2",
+      "description": "Over 1.50m, not exceeding 3m",
+      "unit": "m³",
+      "amount": 1582.44,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.2.3",
+      "description": "Over 3.0m,not exceeding 4.5m",
+      "unit": "m³",
+      "amount": 1947.62,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": [
+        "'l'->'1'"
+      ]
+    },
+    {
+      "item_no": "3.3.2",
+      "description": "Over 1.5m,not exceeding 3m",
+      "unit": "m³",
+      "amount": 2971.37,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.3.3",
+      "description": "Over 3.0m,not exceeding 4.5m",
+      "unit": "m³",
+      "amount": 4571.33,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.3.]",
+      "description": "not exceeding 1.50m",
+      "unit": "m³",
+      "amount": 2531.9,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.4.1",
+      "description": "not exceeding 1 500cm",
+      "unit": "m³",
+      "amount": 784.61,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.4.2",
+      "description": "to a depth exceeding 1500cm but not exceeding 3000mm",
+      "unit": "m³",
+      "amount": 962.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.5.1",
+      "description": "not exceeding 1.5m",
+      "unit": "m³",
+      "amount": 1687.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.5.2",
+      "description": "Over 15.0m,not exceeding 3.00m",
+      "unit": "m³",
+      "amount": 2109.92,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.5.3",
+      "description": "Over 3.0m,not exceeding 4.5m",
+      "unit": "m³",
+      "amount": 2531.9,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.6.1",
+      "description": "not exceeding 1.5m",
+      "unit": "m³",
+      "amount": 2813.22,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.6.1",
+      "description": "not exceeding 1.5m",
+      "unit": "m³",
+      "amount": 3246.03,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.6.2",
+      "description": "Over 1.5m,not exceeding 3m",
+      "unit": "m³",
+      "amount": 3231.28,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.6.2",
+      "description": "Over 1.5m,not exceeding 3m",
+      "unit": "m³",
+      "amount": 4365.35,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.6.3",
+      "description": "Over 3m,not exceeding 4.5m",
+      "unit": "m³",
+      "amount": 5659.75,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.6.3",
+      "description": "Over 3m,not exceeding 4.5m",
+      "unit": "m³",
+      "amount": 7446.77,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.7.2",
+      "description": "Back fill selected excavated mats. from out side the site. (Upto 20km from Quarry site as long as Project Site) (Manualy)",
+      "unit": "m³",
+      "amount": 3043.21,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.7.3",
+      "description": "Back fi[l selected excavated mats. from out side the site. (Upto l5km from Quarry site as long us Project Site) (Mummy)",
+      "unit": "m³",
+      "amount": 2517.13,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.7.4",
+      "description": "Back fi11 setected excavated mats. from out side the site. (Upto 1 from Quarry site as long as Project Site) (Manualy)",
+      "unit": "m³",
+      "amount": 2157.76,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.7.5",
+      "description": "Back fiIl selected excavated mats. from out side the site. (Upto 5km from Quarry site as long as Project Site) (Manualy)",
+      "unit": "m³",
+      "amount": 1798.38,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": [
+        "'I'->'1'"
+      ]
+    },
+    {
+      "item_no": "3.7.6",
+      "description": "Load and Cart away surplus excavated materials to 20km",
+      "unit": "m³",
+      "amount": 872.56,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.7.6",
+      "description": "25cm. thick basaltic hard core.(basaltic stone) (Manually)",
+      "unit": "m²",
+      "amount": 1030.57,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.7.7",
+      "description": "Supply, Spread & Compact Red Ash.",
+      "unit": "m³",
+      "amount": 4259.46,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "3.75",
+      "description": "load and Cart away surplus excavated materials to l5km",
+      "unit": "m³",
+      "amount": 730.88,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Excavation and Earth Work (Manual).csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.11",
+      "description": "10 cm. thick class-c HCB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1112.69,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.12",
+      "description": "10 cm. thick class-c Solid CB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1227.92,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.13",
+      "description": "15 cm. thick class-c HCB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1365.12,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.14",
+      "description": "15 cm. thick class-c Solid HCB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1439.16,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.15",
+      "description": "20 cm.thick class-c HCB Wall Both Sides Left For Pointing",
+      "unit": "m²",
+      "amount": 1584.38,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.16",
+      "description": "20 cm. thick class-c Solid CB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1686.29,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.17",
+      "description": "10 cm. thick class-b HCB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1248.99,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.19",
+      "description": "15 cm. thick class-b HCB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1513.01,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": [
+        "space used as decimal point"
+      ]
+    },
+    {
+      "item_no": "5.2",
+      "description": "50cm. thick masonry foundation (A.G.L) Cement Mortar 1:3",
+      "unit": "m³",
+      "amount": 8693.86,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": [
+        "'Moriar' -> 'Mortar'"
+      ]
+    },
+    {
+      "item_no": "5.2",
+      "description": "15 cm. thick class-b Solid CB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1815.8,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.22",
+      "description": "20 cm. thick class-b Solid CB Wall Both Sides Left for Plastering.",
+      "unit": "m²",
+      "amount": 2354.63,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.23",
+      "description": "10 cm. thick class-a HCB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1580.65,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.24",
+      "description": "10 cm. thick class-a Solid CB Wal) Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1876.61,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.25",
+      "description": "15cm. thick class-a HCB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1970.83,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.26",
+      "description": "15cm. thick class-a Solid CB Wall Both Sides Lelf For Plastering.",
+      "unit": "m²",
+      "amount": 2379.63,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.27",
+      "description": "20 cm.thick class-a HCB Wall Both Sides Left For Pointing",
+      "unit": "m²",
+      "amount": 2105.63,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": [
+        "'l'->'1'"
+      ]
+    },
+    {
+      "item_no": "5.28",
+      "description": "20cm. thick class-a Solid CB Wall Boih Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 2899.61,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": [
+        "'l'->'1'"
+      ]
+    },
+    {
+      "item_no": "5.3",
+      "description": "60cm. thick mason ry foundation (B.G.L) Cement Mortar 1:3.",
+      "unit": "m³",
+      "amount": 8611.36,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": [
+        "space used as decimal point"
+      ]
+    },
+    {
+      "item_no": "5.31",
+      "description": "l20mm .thick Single Brick Wall",
+      "unit": "m²",
+      "amount": 2589.87,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.32",
+      "description": "Chika wall with all wood work (እንጨት በጭቃ ግድግዳ)",
+      "unit": "m²",
+      "amount": 1145.65,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.33",
+      "description": "Eucalyptus wood wall with all wood work (እንጨት ግድግዳ)",
+      "unit": "m²",
+      "amount": 670.55,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.34",
+      "description": "2.5cm thick Timber wall with 10cm & 6cm dia. Eucalyptus and all wood work (ሳንቃ ጣውላ ግድግዳ)",
+      "unit": "m²",
+      "amount": 1403.38,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": [
+        "space used as decimal point"
+      ]
+    },
+    {
+      "item_no": "5.35",
+      "description": "G32 with Euculyptus (ለአጥር የሚሆን ቆርቆሮ እንጨት ግድግዳ)",
+      "unit": "m²",
+      "amount": 979.18,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.36",
+      "description": "8mm thick Chipwood wall with Eticalyptus dia. 10cm and 5x7cm shashemene batten.",
+      "unit": "m²",
+      "amount": 1407.29,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.37",
+      "description": "18 mm thick Laminated MDF Wall with 5x7cm Shasheinene batten wood work and all necessary work.",
+      "unit": "m²",
+      "amount": 2646.08,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.38",
+      "description": "18mm thick Laminated MDF Wall. With out batten",
+      "unit": "m²",
+      "amount": 1755.36,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.39",
+      "description": "20x20mm and 1.5rnm thick Wire mesh wall Welded on the frame",
+      "unit": "m²",
+      "amount": 1093.1,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.4",
+      "description": "40cm. thickOne Side Roughly Dressed Stone masonry (A.G.L) Cement Mortar l :3.",
+      "unit": "m³",
+      "amount": 9597.92,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.4",
+      "description": "Barbed wire fence with 40x40x3min Angle Iron Frame",
+      "unit": "m²",
+      "amount": 1104.26,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.42",
+      "description": "Supply & lay class A galvanized 800* 1000*2.5cm hexagonal Mesh rock size 100- 250 for lm as directed by the engineer. Fabiricated (ጋቢዮኑ በማሽን የተሰራ)",
+      "unit": "m³",
+      "amount": 7159.18,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.5",
+      "description": "50cm. thickOne Side Roughly Dressed Stone masonry (A.G.L) Cement Mortar 1 :a.",
+      "unit": "m³",
+      "amount": 9464.1,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.6",
+      "description": "60cm. thickOne Side Roughly Dressed Stone masonry (A.G.L) Cement Mortar 1:3.",
+      "unit": "m³",
+      "amount": 9367.25,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.7",
+      "description": "50cm. thick masonry foundation (8.G.L) Cement Mortar l:3.",
+      "unit": "m³",
+      "amount": 8444.3,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.8",
+      "description": "40cm. thick masonry Foundation (B. G.L) Cement Mortar 1:3.",
+      "unit": "m³",
+      "amount": 8859.84,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "5.9",
+      "description": "400mm thick Finely dressed elevation wall Cement Mortar 1:3",
+      "unit": "m²",
+      "amount": 3809.85,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task - Masonary and Block Wok.csv",
+      "repairs": []
+    },
+    {
+      "item_no": "4.1.1",
+      "description": "C-15 Concrete (Mechanical Mix) 1 :2:4 with admixture",
+      "unit": "m³",
+      "amount": 18040.92,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.1.2",
+      "description": "C-15 Concrete (Mechanical Mix) 1 :2:4 for Footing ,Beam and slab",
+      "unit": "m³",
+      "amount": 17376.92,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "'I'->'1'",
+        "space used as decimal point"
+      ]
+    },
+    {
+      "item_no": "4.1.3",
+      "description": "C-1 5 Concrete (Mechanical Mix) 1:2:4 for Column ,shear wall",
+      "unit": "m³",
+      "amount": 16215.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.13.6",
+      "description": "Supply and cast Reinforced concrete quality C-25,378 kg of cement/ m3 with water tight chemical in accordance with manufacturer Technicaldata sheet instruction, filled into formwork and vibrated around rod reinforcement (formwork and reinforcement measured separately).",
+      "unit": "m³",
+      "amount": 23106.85,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "'l'->'1'",
+        "cement quantity unit 'Kg' -> 'kg'",
+        "'fromwork' -> 'formwork'"
+      ]
+    },
+    {
+      "item_no": "4.13.6",
+      "description": "Supply and cast Reinforced concrete quality C-25,378 kg of cement/ m3 with water tight chemical in accordance with manufacturer Technical data sheet instruction, filled into from work and vibrated around rod reinforcement (formwork and reinforcement measured separately) Ready Mix. Unit price Shall include Water tight & Concrete bondage chemicals as well as all the necessary works.",
+      "unit": "m³",
+      "amount": 22556.85,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "cement quantity unit 'Kg' -> 'kg'",
+        "'reinfoicement' -> 'reinforcement'"
+      ]
+    },
+    {
+      "item_no": "4.13.7",
+      "description": "Supply and cast Reinforced concrete quality C-30, 420 kg of cement/ m3 with water tight chemical in accordance with manufacturer Technical data sheet instruction, filled into from work and vibrated around rod reinforcement (formwork and reinforcement measured separately).",
+      "unit": "m³",
+      "amount": 23736.85,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "cement quantity unit 'Kg' -> 'kg'",
+        "'vibiated' -> 'vibrated'"
+      ]
+    },
+    {
+      "item_no": "4.13.7",
+      "description": "Supply and cast Reinforced concrete quality C-40, 448 kg of cement/ m3 with water tight chemical in accordance with manufacturer Technical data sheet instruction, filled into formwork and vibrated around rod reinforcement (formwork and reinforcement measured separately}.",
+      "unit": "m³",
+      "amount": 24051.85,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "cement quantity unit 'Kg' -> 'kg'",
+        "'reinfoicement' -> 'reinforcement'",
+        "'fromwork' -> 'formwork'"
+      ]
+    },
+    {
+      "item_no": "4.13.7",
+      "description": "Supply and cast Reinforced concrete quality C-30, 420 kg of cement/ m3 with water tight chemical in accordance with manufacturer Technical data sheet instruction, filled into from work and vibrated around rod reinforcement (formwork and reinforcement measured separately) Ready Mix . Unit price Shall include Water tight & Concrete bondage chemicals as well as all the necessary works.",
+      "unit": "m³",
+      "amount": 25186.85,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "space used as decimal point",
+        "cement quantity unit 'Kg' -> 'kg'",
+        "'Concrète' -> 'Concrete'",
+        "'concrète' -> 'concrete'",
+        "'chernicals' -> 'chemicals'"
+      ]
+    },
+    {
+      "item_no": "4.13.7",
+      "description": "Supply and cast Reinforced concrete quality C-40, 504 kg of cement/ m with water tight chemical in accordance with manufacturerTechnical data sheet insti uction, filled into from work and vibrated around rod reinforcement (formwork and reinforcement measured separately) Ready Mix. Unit price 8hall include Water tight & Concrete bondage chemicals as well as all the necessary works.",
+      "unit": "m³",
+      "amount": 23501.85,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "mixed separators normalised",
+        "cement quantity unit 'Kg' -> 'kg'",
+        "'tormwork' -> 'formwork'"
+      ]
+    },
+    {
+      "item_no": "4.14.1",
+      "description": "Wooden form work For Beam, Footing & Co1innn.sub structure",
+      "unit": "m²",
+      "amount": 1151.94,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.14.2",
+      "description": "Wooden for in work For Super structure column , Floor beans & slab",
+      "unit": "m²",
+      "amount": 1177.21,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "mixed separators normalised"
+      ]
+    },
+    {
+      "item_no": "4.14.3",
+      "description": "I 8mm thick Fair Faced Form work (high quality plywood) with crane",
+      "unit": "m²",
+      "amount": 1731.63,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "'playwood' -> 'plywood'",
+        "'wiih' -> 'with'"
+      ]
+    },
+    {
+      "item_no": "4.14.4",
+      "description": "Wooden scaffolding",
+      "unit": null,
+      "amount": 117.0,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "'scafolding' -> 'scaffolding'"
+      ]
+    },
+    {
+      "item_no": "4.15.1",
+      "description": "Local Re-Bar Grade 75: Dra. 6mm (Sub structure)",
+      "unit": "kg",
+      "amount": 259.15,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.10",
+      "description": "Local Re-Bar Grade 75: Dia. 6mm (Super structure)",
+      "unit": "kg",
+      "amount": 261.26,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.11",
+      "description": "Local Re-Bar Grade 75: Dia. 8mm (Super structure)",
+      "unit": "kg",
+      "amount": 261.26,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.12",
+      "description": "Local Re-Bar Grade 75: Dia. 10mm (Super structure)",
+      "unit": "kg",
+      "amount": 261.26,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.13",
+      "description": "Local Re-Bar Grade 75: Dia. 12mm (Super structure)",
+      "unit": "kg",
+      "amount": 253.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.14",
+      "description": "Local Re-Bar Grade 75: Dia. l4mm (Super structure)",
+      "unit": "kg",
+      "amount": 253.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.15",
+      "description": "Local Re-Bar Grade 75: Dia. 16mm (Super structure)",
+      "unit": "kg",
+      "amount": 253.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.16",
+      "description": "Local Re-Bar Grade 75: Dia. 20mm (Super structure)",
+      "unit": "kg",
+      "amount": 253.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.17",
+      "description": "Local Re-Bar Grade 75: Dia. 24mm (Super structure)",
+      "unit": "kg",
+      "amount": 253.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.18",
+      "description": "Local Re-Bar Grade 75: Dia. 32mm (Super structure)",
+      "unit": "kg",
+      "amount": 253.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.2",
+      "description": "Local Re-Bar Grade 75: Dia. 8mm (Sub structure)",
+      "unit": "kg",
+      "amount": 254.24,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.3",
+      "description": "local Re-Bar Grade 75: Dia. 10mm (Sub structutc)",
+      "unit": "kg",
+      "amount": 254.24,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.4",
+      "description": "Local Re-Bar Grade 75: Dia, 12mm (Sub structure)",
+      "unit": "kg",
+      "amount": 250.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.5",
+      "description": "Local Re-Bar Grade 75: Dia. 14 mm (Sub structure)",
+      "unit": "kg",
+      "amount": 250.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.6",
+      "description": "Local Re-Bar Grade 75: Dia. 16mm (Sub structure)",
+      "unit": "kg",
+      "amount": 250.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.7",
+      "description": "Local Re-Bar Grade 75: Dia. 20mm (Sub structure)",
+      "unit": "kg",
+      "amount": 250.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.8",
+      "description": "Local Re-Bar Grade 75: Dia. 24mm (Sub structure)",
+      "unit": "kg",
+      "amount": 250.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.15.9",
+      "description": "Local Re-Bar Grade 75: Dia. 32 mm (Sub structure)",
+      "unit": "kg",
+      "amount": 250.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.2.1",
+      "description": "C-20 Concrete (Mechanical Mix) 1 :2:3 with admixture",
+      "unit": "m³",
+      "amount": 17033.09,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.2.2",
+      "description": "C-20 Concrete (Mechanical Mix) 1:2:3 for Footing ,Beam and slab",
+      "unit": "m³",
+      "amount": 16369.09,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "'l'->'1'",
+        "collapsed whitespace inside amount"
+      ]
+    },
+    {
+      "item_no": "4.2.3",
+      "description": "C-20 Concrete (Mechanical Mix) 1:2:3 for Column ,shear wall",
+      "unit": "m³",
+      "amount": 16971.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.3.1",
+      "description": "C-25 Concrete (Mechanical Mix) l:2:3 with admixture",
+      "unit": "m³",
+      "amount": 19822.41,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "'l'->'1'",
+        "collapsed whitespace inside amount"
+      ]
+    },
+    {
+      "item_no": "4.3.2",
+      "description": "C-25 Concrete (Mechanical Mix) l:2:3 for Footing ,Beam and slab",
+      "unit": "m³",
+      "amount": 19158.42,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "'.' used as thousands separator"
+      ]
+    },
+    {
+      "item_no": "4.3.3",
+      "description": "C-25 Concrete (Mechanical Mix) 1:2:3 for Column ,shear wall",
+      "unit": "m³",
+      "amount": 19761.29,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.3.4",
+      "description": "C-25 Concrete (Mechanical Mix) l:2:3 for 10cm thick slab",
+      "unit": "m²",
+      "amount": 1915.84,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "'l0cm' -> '10cm'"
+      ]
+    },
+    {
+      "item_no": "4.4.1",
+      "description": "C-3O Concrete (Mechanical Mix) 1 :2:3 with admixture",
+      "unit": "m³",
+      "amount": 20830.41,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.4.2",
+      "description": "C-30 Concrete (Mechanical Mix) I :2:S for Fooling ,Beam and slab",
+      "unit": "m³",
+      "amount": 20166.42,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.4.3",
+      "description": "C-30 Concrete (Mechanical lix) 1 :2:3 for Column ,shear wall",
+      "unit": "m³",
+      "amount": 20769.29,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.7.1",
+      "description": "C-25 Concrete (Mechanical Mix) 1 :2:3 with admixture",
+      "unit": "m³",
+      "amount": 20499.27,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.7.2",
+      "description": "C-25 Concrete (Mechanical Mix) 1 :2:3 for Beam and slab",
+      "unit": "m³",
+      "amount": 19835.27,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.7.3",
+      "description": "C-25 Concrete (Mechanical Mix) l:2:3 for Column ,shear wall",
+      "unit": "m³",
+      "amount": 20525.83,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.7.4",
+      "description": "C-25 Concrete (Mechanical Mix) I :2:o for Stair case",
+      "unit": "m³",
+      "amount": 21019.09,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.7.5",
+      "description": "C-25 Concrete (Mechanical Mix) 1 :2:3 for 15cm thick slab",
+      "unit": "m²",
+      "amount": 2873.76,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "'l5cm' -> '15cm'"
+      ]
+    },
+    {
+      "item_no": "4.7.6",
+      "description": "C-25 Concrete (Mechanical Mix) I :2:3 for 18cm thick slab",
+      "unit": "m²",
+      "amount": 3449.52,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "'g'->'9'"
+      ]
+    },
+    {
+      "item_no": "4.8.1",
+      "description": "C-30 Concrete (Mechanical iviix) l :2:3 with admixture e",
+      "unit": "m³",
+      "amount": 21507.27,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "'adiuixtui' -> 'admixture'"
+      ]
+    },
+    {
+      "item_no": "4.8.2",
+      "description": "C-30 Concrete (Mechanical Mix) l :2:u for Beam and slab",
+      "unit": "m³",
+      "amount": 20843.27,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.8.3",
+      "description": "C-30 Concrete (Mechanical Mix) 1 :2:o for Column ,shear wall",
+      "unit": "m³",
+      "amount": 21533.83,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "4.8.4",
+      "description": "C-30 Concrete (Mechanical Mix) 1:2:3 for Stair case",
+      "unit": "m³",
+      "amount": 22027.09,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "a",
+      "description": "C-7 Lean Concrete (Hand mix) (C-7)",
+      "unit": "m²",
+      "amount": 751.11,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "b",
+      "description": "C-5 Lean Concrete (Hand mix) (C-5)",
+      "unit": "m²",
+      "amount": 713.67,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "c",
+      "description": "C-15 10cm thick mass concrete pavement cost include hard core & 7cm",
+      "unit": "m²",
+      "amount": 3417.5,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "'l0cm' -> '10cm'"
+      ]
+    },
+    {
+      "item_no": "d",
+      "description": "Mortar production (ratio , 1:3)",
+      "unit": "m³",
+      "amount": 14858.24,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "'l'->'1'",
+        "'.' used as thousands separator"
+      ]
+    },
+    {
+      "item_no": "e",
+      "description": "Light Weight Concrete (ratio, 1:2:5)",
+      "unit": "m³",
+      "amount": 15504.69,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "f",
+      "description": "10cm Thick C-15 mass Concrete",
+      "unit": "m²",
+      "amount": 1561.29,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "g",
+      "description": "Supply & Apply polymer modified Semielastic cementitious coating",
+      "unit": "m²",
+      "amount": 842.11,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": [
+        "'Semielastic' -> 'Semielastic'"
+      ]
+    },
+    {
+      "item_no": "h",
+      "description": "Supply & Apply 4mm thick approved quality water proof membrane",
+      "unit": "m²",
+      "amount": 2024.39,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "i",
+      "description": "Supply & Apply ACRYLIC approved quality water proof.",
+      "unit": "m²",
+      "amount": 1391.3,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "i",
+      "description": "GRP Water Tanker with all fitting accessories",
+      "unit": "m³",
+      "amount": 85000.0,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "j",
+      "description": "l0mm thick stayrofoam expansion joint between ground floor slab &",
+      "unit": "ml",
+      "amount": 247.21,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "k",
+      "description": "20mm thick stayrofoam expansion joint between ground fioor slab &",
+      "unit": "ml",
+      "amount": 342.65,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Concrete_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "",
+      "description": "20cm. Clearing on wet & black soil.",
+      "unit": "m²",
+      "amount": 96.92,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "1",
+      "description": "Back fill selected excavated mats. from the site. (Manualy)",
+      "unit": "m³",
+      "amount": 848.39,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.1.2",
+      "description": "to a depth exceeding 1500mm but not exceeding 3000mm",
+      "unit": "m³",
+      "amount": 814.79,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.1.3",
+      "description": "to a depth exceeding 3000mm but not exceeding 4500mm",
+      "unit": "m³",
+      "amount": 921.07,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.1.l",
+      "description": "to a depth not exceeding 1500mm",
+      "unit": "m³",
+      "amount": 706.15,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.2.1",
+      "description": "not exceeding 1.5m",
+      "unit": "m³",
+      "amount": 1406.61,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.2.2",
+      "description": "Over 1.50m, not exceeding 3m",
+      "unit": "m³",
+      "amount": 1582.44,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.2.3",
+      "description": "Over 3.0m,not exceeding 4.5m",
+      "unit": "m³",
+      "amount": 1947.62,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": [
+        "'l'->'1'"
+      ]
+    },
+    {
+      "item_no": "3.3.2",
+      "description": "Over 1.5m,not exceeding 3m",
+      "unit": "m³",
+      "amount": 2971.37,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.3.3",
+      "description": "Over 3.0m,not exceeding 4.5m",
+      "unit": "m³",
+      "amount": 4571.33,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.3.]",
+      "description": "not exceeding 1.50m",
+      "unit": "m³",
+      "amount": 2531.9,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.4.1",
+      "description": "not exceeding 1 500cm",
+      "unit": "m³",
+      "amount": 784.61,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.4.2",
+      "description": "to a depth exceeding 1500cm but not exceeding 3000mm",
+      "unit": "m³",
+      "amount": 962.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.5.1",
+      "description": "not exceeding 1.5m",
+      "unit": "m³",
+      "amount": 1687.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.5.2",
+      "description": "Over 15.0m,not exceeding 3.00m",
+      "unit": "m³",
+      "amount": 2109.92,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.5.3",
+      "description": "Over 3.0m,not exceeding 4.5m",
+      "unit": "m³",
+      "amount": 2531.9,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.6.1",
+      "description": "not exceeding 1.5m",
+      "unit": "m³",
+      "amount": 2813.22,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.6.1",
+      "description": "not exceeding 1.5m",
+      "unit": "m³",
+      "amount": 3246.03,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.6.2",
+      "description": "Over 1.5m,not exceeding 3m",
+      "unit": "m³",
+      "amount": 3231.28,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.6.2",
+      "description": "Over 1.5m,not exceeding 3m",
+      "unit": "m³",
+      "amount": 4365.35,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.6.3",
+      "description": "Over 3m,not exceeding 4.5m",
+      "unit": "m³",
+      "amount": 5659.75,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.6.3",
+      "description": "Over 3m,not exceeding 4.5m",
+      "unit": "m³",
+      "amount": 7446.77,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.7.2",
+      "description": "Back fill selected excavated mats. from out side the site. (Upto 20km from Quarry site as long as Project Site) (Manualy)",
+      "unit": "m³",
+      "amount": 3043.21,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.7.3",
+      "description": "Back fi[l selected excavated mats. from out side the site. (Upto l5km from Quarry site as long us Project Site) (Mummy)",
+      "unit": "m³",
+      "amount": 2517.13,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.7.4",
+      "description": "Back fi11 setected excavated mats. from out side the site. (Upto 1 from Quarry site as long as Project Site) (Manualy)",
+      "unit": "m³",
+      "amount": 2157.76,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.7.5",
+      "description": "Back fiIl selected excavated mats. from out side the site. (Upto 5km from Quarry site as long as Project Site) (Manualy)",
+      "unit": "m³",
+      "amount": 1798.38,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": [
+        "'I'->'1'"
+      ]
+    },
+    {
+      "item_no": "3.7.6",
+      "description": "Load and Cart away surplus excavated materials to 20km",
+      "unit": "m³",
+      "amount": 872.56,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.7.6",
+      "description": "25cm. thick basaltic hard core.(basaltic stone) (Manually)",
+      "unit": "m²",
+      "amount": 1030.57,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.7.7",
+      "description": "Supply, Spread & Compact Red Ash.",
+      "unit": "m³",
+      "amount": 4259.46,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "3.75",
+      "description": "load and Cart away surplus excavated materials to l5km",
+      "unit": "m³",
+      "amount": 730.88,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "no-counterpart",
+      "source_file": "Task_Excavation_and_Earth_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.1.1",
+      "description": "20cm. Clearing on wet & black soil.",
+      "unit": "m²",
+      "amount": 96.92,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.2.1",
+      "description": "to a depth not exceeding 1.5m",
+      "unit": "m³",
+      "amount": 368.82,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.2.3",
+      "description": "to a depth exceeding 3.00m bul not exceeding 4.50m",
+      "unit": "m³",
+      "amount": 547.47,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.2.4",
+      "description": "to a depth exceeding 4.50m but not exceeding 6.00m",
+      "unit": "m³",
+      "amount": 625.67,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.2.5",
+      "description": "to a depth exceeding 6.00m but not exceeding 7.50m",
+      "unit": "m³",
+      "amount": 729.95,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.2.6",
+      "description": "to a depth exceeding 7.50m but not exceeding 9.00m",
+      "unit": "m³",
+      "amount": 875.94,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.2.7",
+      "description": "to a depth exceeding 9.00m but not exceeding l0.50m",
+      "unit": "m³",
+      "amount": 973.27,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.3.1",
+      "description": "to a depth not exceeding 1500cm loose and dry soil",
+      "unit": "m³",
+      "amount": 417.12,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.3.3",
+      "description": "to a depth not exceeding 3000cmbut not exceeding 4500mm",
+      "unit": "m³",
+      "amount": 556.15,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.3.5",
+      "description": "to a depth not exceeding 6000cmbut not exceeding 7500mm",
+      "unit": "m³",
+      "amount": 834.23,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.3.6",
+      "description": "to a depth not exceeding 7500cmbut not exceeding 9000mm",
+      "unit": "m³",
+      "amount": 1053.77,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.3.7",
+      "description": "to a depth not exceeding 9000cmbut not exceeding 10500mm",
+      "unit": "m³",
+      "amount": 1430.11,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.4.1",
+      "description": "not exceeding 1.5m",
+      "unit": "m³",
+      "amount": 666.44,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.4.2",
+      "description": "Over 1.50m , not exceeding 3m",
+      "unit": "m³",
+      "amount": 759.96,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.4.3",
+      "description": "Over 3.0m,not exceeding 4.5m",
+      "unit": "m³",
+      "amount": 922.48,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.4.4",
+      "description": "Over 4.5m,not exceeding 6.0rn",
+      "unit": "m³",
+      "amount": 1317.83,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.4.5",
+      "description": "Over 6.0m,not exceeding 7.5m",
+      "unit": "m³",
+      "amount": 1882.62,
+      "currency": "ETB",
+      "confidence": 0.9,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": [
+        "'l'->'1'"
+      ]
+    },
+    {
+      "item_no": "2.4.6",
+      "description": "Over 7.5m,not exceeding 9.0m",
+      "unit": "m³",
+      "amount": 2689.46,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.4.7",
+      "description": "Over 9.0m,not exceeding 10.5in",
+      "unit": "m³",
+      "amount": 3842.08,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.5,4",
+      "description": "Over 4.5m,not exceeding 6.0rn",
+      "unit": "m³",
+      "amount": 1116.84,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.5.1",
+      "description": "not exceeding 1.5m",
+      "unit": "m³",
+      "amount": 829.34,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.5.2",
+      "description": "Over 1.50m , not exceeding 3m",
+      "unit": "m³",
+      "amount": 911.37,
+      "currency": "ETB",
+      "confidence": 0.9,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": [
+        "'I'->'1'",
+        "collapsed whitespace inside amount"
+      ]
+    },
+    {
+      "item_no": "2.5.3",
+      "description": "Over 3.0m,not exceeding 4.5m",
+      "unit": "m³",
+      "amount": 1128.36,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.5.5",
+      "description": "Over 6.0m,not exceeding 7.5m",
+      "unit": "m³",
+      "amount": 2302.78,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.5.6",
+      "description": "Over 7.5m,not exceeding 9.0m",
+      "unit": "m³",
+      "amount": 3289.68,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.5.7",
+      "description": "Over 9.0m,not exceeding 10.5in",
+      "unit": "m³",
+      "amount": 4699.54,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.6.3",
+      "description": "Over 3.0m,not exceeding 4.5m",
+      "unit": "m³",
+      "amount": 2050.73,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.6.4",
+      "description": "Over 4.5m,not exceeding 6.0rn",
+      "unit": "m³",
+      "amount": 2791.68,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.6.5",
+      "description": "Over 6.0m,not exceeding 7.5m",
+      "unit": "m³",
+      "amount": 3489.61,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.6.6",
+      "description": "Over 7.5m,not exceeding 9.0m",
+      "unit": "m³",
+      "amount": 4362.01,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.6.7",
+      "description": "Over 9.0m,not exceeding 10.5in",
+      "unit": "m³",
+      "amount": 5131.77,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.61",
+      "description": "not exceeding 1.5m",
+      "unit": "m³",
+      "amount": 1367.93,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.62",
+      "description": "Over 1.50m , not exceeding 3m",
+      "unit": "m³",
+      "amount": 1706.24,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.7.2",
+      "description": "Over 1.50m , not exceeding 3m",
+      "unit": "m³",
+      "amount": 2050.58,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.7.3",
+      "description": "Over 3.0m,not exceeding 4.5m",
+      "unit": "m³",
+      "amount": 2665.75,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.7.4",
+      "description": "Over 4.5m,not exceeding 6.0rn",
+      "unit": "m³",
+      "amount": 3626.87,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.7.5",
+      "description": "Over 6.0m,not exceeding 7.5m",
+      "unit": "m³",
+      "amount": 5181.25,
+      "currency": "ETB",
+      "confidence": 0.9,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": [
+        "'l'->'1'",
+        "collapsed whitespace inside amount"
+      ]
+    },
+    {
+      "item_no": "2.7.6",
+      "description": "Over 7.5m,not exceeding 9.0m",
+      "unit": "m³",
+      "amount": 7401.78,
+      "currency": "ETB",
+      "confidence": 0.9,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": [
+        "space used as decimal point"
+      ]
+    },
+    {
+      "item_no": "2.7.7",
+      "description": "Over 9.0m,not exceeding 10.5in",
+      "unit": "m³",
+      "amount": 10573.97,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.7.l",
+      "description": "not exceeding 1.5m",
+      "unit": "m³",
+      "amount": 1658.69,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.8.1",
+      "description": "Back fill selected excavated materials from the site.(Mechanized)",
+      "unit": "m³",
+      "amount": 975.65,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.8.2",
+      "description": "Back fill selected excavated materials from out side the site. (Upto from Quarry site as long as Ploject Site) (Mechanized)",
+      "unit": "m³",
+      "amount": 3059.4,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.8.3",
+      "description": "Back fill selected excavated mats. from out side the site. (Upto l5km from Quarry site as long as Project Site) (Mechanized)",
+      "unit": "m³",
+      "amount": 2533.33,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.8.4",
+      "description": "Back fill selected excavated mats. from out side the site. (Upto l0km from Quarry site as long as Project Site) (Mechanized)",
+      "unit": "m³",
+      "amount": 2173.95,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "2.8.5",
+      "description": "Baek fill selected excavated mats. from out site the site. (Upto Skin from Quarry site as long as Project Site) (Mechanized)",
+      "unit": "m³",
+      "amount": 1814.58,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "single-source",
+      "source_file": "Task_Excavation_and_Earth_Work_Mechanized.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.11",
+      "description": "10 cm. thick class-c HCB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1112.69,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.12",
+      "description": "10 cm. thick class-c Solid CB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1227.92,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.13",
+      "description": "15 cm. thick class-c HCB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1365.12,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.14",
+      "description": "15 cm. thick class-c Solid HCB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1439.16,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.15",
+      "description": "20 cm.thick class-c HCB Wall Both Sides Left For Pointing",
+      "unit": "m²",
+      "amount": 1584.38,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.16",
+      "description": "20 cm. thick class-c Solid CB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1686.29,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.17",
+      "description": "10 cm. thick class-b HCB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1248.99,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.19",
+      "description": "15 cm. thick class-b HCB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1513.01,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": [
+        "space used as decimal point"
+      ]
+    },
+    {
+      "item_no": "5.2",
+      "description": "50cm. thick masonry foundation (A.G.L) Cement Mortar 1:3",
+      "unit": "m³",
+      "amount": 8693.86,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": [
+        "'Moriar' -> 'Mortar'"
+      ]
+    },
+    {
+      "item_no": "5.2",
+      "description": "15 cm. thick class-b Solid CB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1815.8,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.22",
+      "description": "20 cm. thick class-b Solid CB Wall Both Sides Left for Plastering.",
+      "unit": "m²",
+      "amount": 2354.63,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.23",
+      "description": "10 cm. thick class-a HCB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1580.65,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.24",
+      "description": "10 cm. thick class-a Solid CB Wal) Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1876.61,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.25",
+      "description": "15cm. thick class-a HCB Wall Both Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 1970.83,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.26",
+      "description": "15cm. thick class-a Solid CB Wall Both Sides Lelf For Plastering.",
+      "unit": "m²",
+      "amount": 2379.63,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.27",
+      "description": "20 cm.thick class-a HCB Wall Both Sides Left For Pointing",
+      "unit": "m²",
+      "amount": 2105.63,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": [
+        "'l'->'1'"
+      ]
+    },
+    {
+      "item_no": "5.28",
+      "description": "20cm. thick class-a Solid CB Wall Boih Sides Left For Plastering.",
+      "unit": "m²",
+      "amount": 2899.61,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": [
+        "'l'->'1'"
+      ]
+    },
+    {
+      "item_no": "5.3",
+      "description": "60cm. thick mason ry foundation (B.G.L) Cement Mortar 1:3.",
+      "unit": "m³",
+      "amount": 8611.36,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": [
+        "space used as decimal point"
+      ]
+    },
+    {
+      "item_no": "5.31",
+      "description": "l20mm .thick Single Brick Wall",
+      "unit": "m²",
+      "amount": 2589.87,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.32",
+      "description": "Chika wall with all wood work (እንጨት በጭቃ ግድግዳ)",
+      "unit": "m²",
+      "amount": 1145.65,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.33",
+      "description": "Eucalyptus wood wall with all wood work (እንጨት ግድግዳ)",
+      "unit": "m²",
+      "amount": 670.55,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.34",
+      "description": "2.5cm thick Timber wall with 10cm & 6cm dia. Eucalyptus and all wood work (ሳንቃ ጣውላ ግድግዳ)",
+      "unit": "m²",
+      "amount": 1403.38,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": [
+        "space used as decimal point"
+      ]
+    },
+    {
+      "item_no": "5.35",
+      "description": "G32 with Euculyptus (ለአጥር የሚሆን ቆርቆሮ እንጨት ግድግዳ)",
+      "unit": "m²",
+      "amount": 979.18,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.36",
+      "description": "8mm thick Chipwood wall with Eticalyptus dia. 10cm and 5x7cm shashemene batten.",
+      "unit": "m²",
+      "amount": 1407.29,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.37",
+      "description": "18 mm thick Laminated MDF Wall with 5x7cm Shasheinene batten wood work and all necessary work.",
+      "unit": "m²",
+      "amount": 2646.08,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.38",
+      "description": "18mm thick Laminated MDF Wall. With out batten",
+      "unit": "m²",
+      "amount": 1755.36,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.39",
+      "description": "20x20mm and 1.5rnm thick Wire mesh wall Welded on the frame",
+      "unit": "m²",
+      "amount": 1093.1,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.4",
+      "description": "40cm. thickOne Side Roughly Dressed Stone masonry (A.G.L) Cement Mortar l :3.",
+      "unit": "m³",
+      "amount": 9597.92,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.4",
+      "description": "Barbed wire fence with 40x40x3min Angle Iron Frame",
+      "unit": "m²",
+      "amount": 1104.26,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.42",
+      "description": "Supply & lay class A galvanized 800* 1000*2.5cm hexagonal Mesh rock size 100- 250 for lm as directed by the engineer. Fabiricated (ጋቢዮኑ በማሽን የተሰራ)",
+      "unit": "m³",
+      "amount": 7159.18,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.5",
+      "description": "50cm. thickOne Side Roughly Dressed Stone masonry (A.G.L) Cement Mortar 1 :a.",
+      "unit": "m³",
+      "amount": 9464.1,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.6",
+      "description": "60cm. thickOne Side Roughly Dressed Stone masonry (A.G.L) Cement Mortar 1:3.",
+      "unit": "m³",
+      "amount": 9367.25,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.7",
+      "description": "50cm. thick masonry foundation (8.G.L) Cement Mortar l:3.",
+      "unit": "m³",
+      "amount": 8444.3,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.8",
+      "description": "40cm. thick masonry Foundation (B. G.L) Cement Mortar 1:3.",
+      "unit": "m³",
+      "amount": 8859.84,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    },
+    {
+      "item_no": "5.9",
+      "description": "400mm thick Finely dressed elevation wall Cement Mortar 1:3",
+      "unit": "m²",
+      "amount": 3809.85,
+      "currency": "ETB",
+      "confidence": 1.0,
+      "cross_check": "confirmed",
+      "source_file": "Task_Masonary_and_Block_Work.json",
+      "repairs": []
+    }
+  ]
+}
