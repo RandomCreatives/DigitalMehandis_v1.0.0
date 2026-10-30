@@ -10,6 +10,13 @@ failed before a single test ran.
 import os
 import uuid
 
+# Make the suite runnable with zero setup: fall back to a throwaway SQLite
+# database and a dummy secret when no environment is configured. Must happen
+# before app.core.config is imported, since Settings validates on import.
+os.environ.setdefault("DATABASE_URL", "sqlite+aiosqlite:///./test_database.db")
+os.environ.setdefault("SECRET_KEY", "test_secret_key_for_ci")
+os.environ.setdefault("UPLOAD_DIR", "./uploads")
+
 import pytest
 import pytest_asyncio
 from httpx import ASGITransport, AsyncClient

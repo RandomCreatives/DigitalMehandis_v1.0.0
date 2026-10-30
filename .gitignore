@@ -48,3 +48,7 @@ Thumbs.db
 
 # Build artifacts
 *.tsbuildinfo
+
+# Rate extraction working files
+backend/test_database.db
+backend/local_test.db
