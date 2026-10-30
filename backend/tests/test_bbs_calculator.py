@@ -1,6 +1,6 @@
 """Unit tests for BBS calculation logic."""
 import pytest
-from app.utils.bbs_calculator import BBSCalculator
+from app.utils.bbs_calculator import BBSStandardError, BBSCalculator
 
 
 def test_straight_bar_cutting_length():
@@ -61,14 +61,40 @@ def test_steel_weight_12mm():
     assert abs(weight - 4.44) < 0.01
 
 
-def test_lap_length_ebcs():
-    lap = BBSCalculator.calculate_lap_length(diameter_mm=16, standard="EBCS_3")
-    assert lap == 800  # 50 * 16
+def test_lap_length_ec2_default():
+    """Default is now ES EN 1992-1-1:2015 §8.4.4 on a C25/30 mix."""
+    lap = BBSCalculator.calculate_lap_length(diameter_mm=16, concrete_grade="C25/30")
+    # f_bd = 2.25*1.0*1.0*(0.7*0.30*25^(2/3)/1.5) = 2.693 MPa
+    # l_b,rqd = (16/4)*(500/1.15)/2.693 = 645.7 mm ; l_0 = 1.5*l_b,rqd = 968.6 mm
+    assert lap == 969
 
 
-def test_lap_length_bs():
-    lap = BBSCalculator.calculate_lap_length(diameter_mm=16, standard="BS_8666")
-    assert lap == 640  # 40 * 16
+def test_lap_length_ec2_staggered_is_shorter():
+    """a6 = 1.4 for staggered laps instead of 1.5 for 100 % lapped (Table 8.2)."""
+    full = BBSCalculator.calculate_lap_length(16, concrete_grade="C25/30")
+    staggered = BBSCalculator.calculate_lap_length(16, concrete_grade="C25/30", staggered=True)
+    assert staggered == 904
+    assert staggered < full
+
+
+def test_lap_length_legacy_ebcs_alias():
+    """'EBCS_3' was wrong (Design of Steel Structures). Kept as an alias for
+    EBCS_2 so old rows still resolve -- but it never reports EBCS_3 back."""
+    assert BBSCalculator.calculate_lap_length(16, "EBCS_3") == 800
+    detail = BBSCalculator.lap_length_detail(16, "EBCS_3")
+    assert detail["design_code"] == "EBCS_2"
+    assert detail["method"] == "practice_multiple"
+
+
+def test_lap_length_bs_8666_refuses_to_invent_a_lap():
+    """BS 8666 defines shape codes and bend deductions, not lap lengths."""
+    with pytest.raises(BBSStandardError):
+        BBSCalculator.calculate_lap_length(16, "BS_8666")
+
+
+def test_unknown_standard_raises():
+    with pytest.raises(BBSStandardError):
+        BBSCalculator.calculate_lap_length(16, "EBCS_9")
 
 
 def test_enrich_bar():
@@ -85,7 +111,11 @@ def test_enrich_bar():
     assert enriched["cutting_length_m"] == 2.5
     assert abs(enriched["weight_per_unit_kg"] - 3.945) < 0.01
     assert abs(enriched["total_weight_kg"] - 39.45) < 0.1
-    assert enriched["lap_length_mm"] == 800
+    # Default C25/30 under EC2 (see test_lap_length_ec2_default).
+    assert enriched["lap_length_mm"] == 969
+    assert enriched["design_code"] == "ES_EN_1992_1_1"
+    assert "ES EN 1992-1-1:2015" in enriched["citation"]
+    assert enriched["lap_detail"]["method"] == "formula"
 
 
 def test_unknown_shape_raises():

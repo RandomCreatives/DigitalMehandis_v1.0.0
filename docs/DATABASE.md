@@ -57,7 +57,7 @@
 | description | VARCHAR(500) | |
 | unit | VARCHAR(50) | |
 | rate_per_unit | NUMERIC(15,2) | ETB |
-| rate_source | VARCHAR(255) | EBCS 2023 / Market Survey |
+| rate_source | VARCHAR(255) | MoWUD 2018 Q3 / Market Survey |
 | region | VARCHAR(255) | Addis Ababa / National Average |
 
 ### bbs_bars
@@ -73,7 +73,9 @@
 | clear_length_m | NUMERIC(8,3) | |
 | hook_length_mm | INT | default 0 |
 | cover_top_mm / cover_bottom_mm | INT | default 50 |
-| lap_length_mm | INT | calculated: 50d (EBCS) or 40d (BS) |
+| lap_length_mm | INT | calculated per `design_code` (ES EN 1992-1-1 §8.4.4 formula, or EBCS-2 50φ practice) |
+| design_code | VARCHAR(40) | which code produced lap_length_mm |
+| concrete_grade | VARCHAR(20) | grade used for the lap calc, e.g. C25/30 |
 | section | VARCHAR(50) | SUBSTRUCTURE / SUPERSTRUCTURE |
 
 ### boq_outputs

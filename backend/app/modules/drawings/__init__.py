@@ -9,7 +9,10 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 
 from app.db.session import get_db, AsyncSessionLocal
-from app.db.models import Drawing, Project, User, BOQItem
+from app.db.models import Drawing, Project, User
+# BOQItem moved to the Phase 2 models in the restructure; importing it from
+# app.db.models raised ImportError and silently dropped every drawings route.
+from app.db.models_phase2 import BOQItem
 from app.db.models_phase3 import (
     DXFLayer, DXFBlock, DXFAnalysisJob, LayerMapping, BlockMapping,
     QuantitySuggestion, DXFEntity, LayerMappingTemplate, DrawingRevision

@@ -6,7 +6,18 @@ DRAWING_CATEGORIES = ["ARCHITECTURAL", "STRUCTURAL", "ELECTRICAL", "SANITARY"]
 
 SECTIONS = ["SUBSTRUCTURE", "SUPERSTRUCTURE"]
 
-CODES_OF_PRACTICE = ["EBCS", "IS_CODE", "BS", "EUROCODE"]
+#: Codes of practice recognised by the app.
+#: NOTE: "EBCS_3" was the old BBS default and is WRONG -- EBCS-3 is Design of
+#: Steel Structures. The concrete code is EBCS-2:1995 (cube strength), itself
+#: superseded by ES EN 1992-1-1:2015 (cylinder strength). "EBCS_3" survives
+#: only as a deprecated alias in app.utils.bbs_calculator.ALIASES.
+CODES_OF_PRACTICE = ["ES_EN_1992_1_1", "EBCS_2", "BS_8666", "IS_CODE"]
+
+#: Strength convention per code -- see app.utils.concrete_grades.
+GRADE_STANDARDS = {
+    "EBCS_2": "CUBE",
+    "ES_EN_1992_1_1": "CYLINDER",
+}
 
 USER_ROLES = ["QS_PROFESSIONAL", "STUDENT", "CONTRACTOR", "ADMIN"]
 

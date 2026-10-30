@@ -174,6 +174,10 @@ class BBSBar(Base):
     cover_top_mm: Mapped[int] = mapped_column(Integer, default=50)
     cover_bottom_mm: Mapped[int] = mapped_column(Integer, default=50)
     lap_length_mm: Mapped[int | None] = mapped_column(Integer)
+    # Audit trail for the lap calculation: which code produced lap_length_mm,
+    # and which concrete grade was used to derive it. Nullable for legacy rows.
+    design_code: Mapped[str | None] = mapped_column(String(40))
+    concrete_grade: Mapped[str | None] = mapped_column(String(20))
     section: Mapped[str | None] = mapped_column(String(50))
     notes: Mapped[str | None] = mapped_column(Text)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now_utc)

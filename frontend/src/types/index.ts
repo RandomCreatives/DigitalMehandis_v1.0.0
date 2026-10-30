@@ -94,6 +94,11 @@ export interface BBSBar {
   cover_top_mm: number;
   cover_bottom_mm: number;
   lap_length_mm: number | null;
+  /** Which code produced lap_length_mm, and its citation (audit trail). */
+  design_code?: string | null;
+  design_code_title?: string | null;
+  citation?: string | null;
+  concrete_grade?: string | null;
   cutting_length_m: number | null;
   weight_per_unit_kg: number | null;
   total_weight_kg: number | null;
@@ -113,7 +118,10 @@ export interface BBSBarCreate {
   cover_bottom_mm?: number;
   section?: Section;
   notes?: string;
+  /** Code of practice for laps: ES_EN_1992_1_1 (default) or EBCS_2. */
   standard?: string;
+  /** Concrete grade as written on the BoQ/drawing, e.g. "C25/30" or "C-25". */
+  concrete_grade?: string;
 }
 
 export interface CuttingListItem {
